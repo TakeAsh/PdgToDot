@@ -1,0 +1,82 @@
+graph "磯野家 家系図" {
+graph [charset="UTF-8"; rankdir="TB"]
+node [shape="record"; fontname="Sans"]
+
+// dpi 150
+
+
+Isono_Mokuzu [label="{ 磯野&nbsp;藻屑&nbsp;源素太皆| 磯野家のご先祖\l}"]
+
+Fuguta_Haha [label="{ フグ田| 住所:&nbsp;大阪府\l}"]
+
+Isono_Umihei [label="{ 磯野&nbsp;海平| 長男\l住所:&nbsp;福岡県\l出生:&nbsp;1895.09.14\l}"]
+
+Isono_Namihei [label="{ 磯野&nbsp;波平| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1895.09.14\l}"]
+
+Isono_Fune [label="{ 磯野&nbsp;フネ| 波平の妻\l住所:&nbsp;東京都\l出生:&nbsp;1901.\l}"]
+
+Namino_Nagie [label="{ 波野&nbsp;なぎえ| 長女\l住所:&nbsp;福岡県\l}"]
+
+Namino_NagieOtto [label="{ 波野| なぎえの夫\l}"]
+
+Fuguta_Masuo [label="{ フグ田&nbsp;マスオ| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1917.\l}"]
+
+Fuguta_Sazae [label="{ フグ田&nbsp;サザエ| 長女\l住所:&nbsp;東京都\l出生:&nbsp;1922.11.22\l}"]
+
+Isono_Katsuo [label="{ 磯野&nbsp;カツオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1938.\l}"]
+
+Isono_Wakame [label="{ 磯野&nbsp;ワカメ| 次女\l住所:&nbsp;東京都\l出生:&nbsp;1942.\l}"]
+
+Namino_Norisuke [label="{ 波野&nbsp;ノリスケ| 三男\l住所:&nbsp;東京都\l}"]
+
+Namino_Taiko [label="{ 波野&nbsp;タイ子| ノリスケの妻\l住所:&nbsp;東京都\l}"]
+
+Fuguta_Tarao [label="{ フグ田&nbsp;タラオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1947.10.\l}"]
+
+Namino_Ikura [label="{ 波野&nbsp;イクラ| 長男\l住所:&nbsp;東京都\l}"]
+
+// {rank=same; Isono_Mokuzu [style=invis]}
+
+{rank=same; Fuguta_Haha -- Isono_Umihei -- Isono_Namihei -- Namino_Nagie [style=invis]}
+
+{rank=same; Fuguta_Masuo -- Fuguta_Sazae -- Isono_Katsuo -- Isono_Wakame -- Namino_Norisuke [style=invis]}
+
+// {rank=same; Fuguta_Tarao -- Namino_Ikura [style=invis]}
+
+f0_c0 [shape="point"; height="0.01"; width="0.01"]
+f0_c [shape="point"; height="0.01"; width="0.01"]
+f0_c1 [shape="point"; height="0.01"; width="0.01"]
+f0_c2 [shape="point"; height="0.01"; width="0.01"]
+{rank=same; f0_c0 -- f0_c -- f0_c1 -- f0_c2}
+Isono_Mokuzu -- f0_c
+f0_c0 -- Isono_Umihei
+f0_c1 -- Isono_Namihei
+f0_c2 -- Namino_Nagie
+
+Fuguta_Haha -- Fuguta_Masuo
+
+f2_p [shape="point"; height="0.01"; width="0.01"]
+f2_c0 [shape="point"; height="0.01"; width="0.01"]
+f2_c [shape="point"; height="0.01"; width="0.01"]
+f2_c1 [shape="point"; height="0.01"; width="0.01"]
+f2_c2 [shape="point"; height="0.01"; width="0.01"]
+{rank=same; Isono_Namihei -- f2_p -- Isono_Fune [style=bold]}
+{rank=same; f2_c0 -- f2_c -- f2_c1 -- f2_c2}
+f2_p -- f2_c
+f2_c0 -- Fuguta_Sazae
+f2_c1 -- Isono_Katsuo
+f2_c2 -- Isono_Wakame
+
+f3_p [shape="point"; height="0.01"; width="0.01"]
+{rank=same; Namino_Nagie -- f3_p -- Namino_NagieOtto [style=bold]}
+f3_p -- Namino_Norisuke
+
+f4_p [shape="point"; height="0.01"; width="0.01"]
+{rank=same; Fuguta_Masuo -- f4_p -- Fuguta_Sazae [style=bold]}
+f4_p -- Fuguta_Tarao
+
+f5_p [shape="point"; height="0.01"; width="0.01"]
+{rank=same; Namino_Norisuke -- f5_p -- Namino_Taiko [style=bold]}
+f5_p -- Namino_Ikura
+
+}
