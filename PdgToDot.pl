@@ -175,7 +175,7 @@ sub convertFamily {
 sub hashToAttr {
     my $refHash = shift or return;
     my @attr = map { $_ . '="' . $refHash->{$_} . '"' } keys( %{$refHash} );
-    return '[' . join( "; ", @attr ) . ']';
+    return '[' . join( ", ", @attr ) . ']';
 }
 
 sub trim {
