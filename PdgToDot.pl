@@ -71,7 +71,7 @@ sub convertBody {
     my $body = shift or return;
     my %graphAttr = ( 'charset' => $charsetFile, );
     getAttribute( \$body, \%graphAttr, 'rankdir', qr(^\s*direction\s+(\S+).*$)m );
-    getAttribute( \$body, \%graphAttr, 'dpi', qr(^\s*dpi\s+(\S+).*$)m );
+    getAttribute( \$body, \%graphAttr, 'dpi',     qr(^\s*dpi\s+(\S+).*$)m );
     my %nodeAttr = ( 'shape' => 'record', );
     getAttribute( \$body, \%nodeAttr, 'fontname', qr(^\s*fontname\s+"([^"]+)".*$)m );
     setDefault( \$body, 'node',  \%nodeAttr );
@@ -174,7 +174,7 @@ sub convertFamily {
 
 sub hashToAttr {
     my $refHash = shift or return;
-    my @attr = map { $_ . '="' . $refHash->{$_} . '"' } keys( %{$refHash} );
+    my @attr = map { $_ . '="' . $refHash->{$_} . '"' } sort( keys( %{$refHash} ) );
     return '[' . join( ", ", @attr ) . ']';
 }
 
