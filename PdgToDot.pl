@@ -142,21 +142,19 @@ sub convertFamily {
         $rankParents = '{rank=same; ' . join( ' -- ', @parents ) . ' [style=bold]}';
     }
     if ( @children < 2 ) {
-        push( @parentChildren, $children[0] );
+        my $jointChild = 'f' . $familyIndex . '_c';
+        push( @joints,            $jointChild . ' ' . $attrJoint );
+        push( @parentChildren,    $jointChild );
+        push( @lineJointChildren, $jointChild . ' -- ' . $children[0] );
     } else {
-        my @jointChildren = ();
-        for ( my $i = 0; $i < @children; ++$i ) {
-            my $child      = $children[$i];
-            my $childJoint = 'f' . $familyIndex . '_c' . $i;
-            push( @jointChildren,     $childJoint );
-            push( @lineJointChildren, $childJoint . ' -- ' . $child );
-        }
-        my $pcJoint = 'f' . $familyIndex . '_c';
-        my $c0      = shift(@jointChildren);
-        @jointChildren = ( $c0, $pcJoint, @jointChildren );
+        my @jointChildren = map { 'f' . $familyIndex . '_c' . $_; } ( 0 .. 2 );
         map { push( @joints, $_ . ' ' . $attrJoint ); } @jointChildren;
         $rankJoints = '{rank=same; ' . join( ' -- ', @jointChildren ) . '}';
-        push( @parentChildren, $pcJoint );
+        push( @parentChildren, $jointChildren[1] );
+        for ( my $i = 0; $i < @children; ++$i ) {
+            my $terminal = $i == 0 ? $jointChildren[0] : $jointChildren[2];
+            push( @lineJointChildren, $terminal . ' -- ' . $children[$i] );
+        }
     }
     push( @family, @joints );
     if ($rankParents) {
