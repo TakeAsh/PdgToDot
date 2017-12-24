@@ -69,7 +69,7 @@ sub convertFile {
 
 sub convertBody {
     my $body = shift or return;
-    my %graphAttr = ( 'charset' => $charsetFile, );
+    my %graphAttr = ( 'charset' => $charsetFile, 'splines' => 'ortho' );
     getAttribute( \$body, \%graphAttr, 'rankdir', qr(^\s*direction\s+(\S+).*$)m );
     getAttribute( \$body, \%graphAttr, 'dpi',     qr(^\s*dpi\s+(\S+).*$)m );
     my %nodeAttr = ( 'shape' => 'record', );
