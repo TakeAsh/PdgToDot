@@ -1,6 +1,6 @@
 graph "磯野家 家系図" {
-graph [charset="UTF-8"; rankdir="TB"]
-node [shape="record"; fontname="Sans"]
+graph [rankdir="TB", charset="UTF-8"]
+node [fontname="Sans", shape="record"]
 
 // dpi 150
 
@@ -43,10 +43,10 @@ Namino_Ikura [label="{ 波野&nbsp;イクラ| 長男\l住所:&nbsp;東京都\l}"
 
 // {rank=same; Fuguta_Tarao -- Namino_Ikura [style=invis]}
 
-f0_c0 [shape="point"; height="0.01"; width="0.01"]
-f0_c [shape="point"; height="0.01"; width="0.01"]
-f0_c1 [shape="point"; height="0.01"; width="0.01"]
-f0_c2 [shape="point"; height="0.01"; width="0.01"]
+f0_c0 [width="0.01", shape="point", height="0.01"]
+f0_c [width="0.01", shape="point", height="0.01"]
+f0_c1 [width="0.01", shape="point", height="0.01"]
+f0_c2 [width="0.01", shape="point", height="0.01"]
 {rank=same; f0_c0 -- f0_c -- f0_c1 -- f0_c2}
 Isono_Mokuzu -- f0_c
 f0_c0 -- Isono_Umihei
@@ -55,11 +55,11 @@ f0_c2 -- Namino_Nagie
 
 Fuguta_Haha -- Fuguta_Masuo
 
-f2_p [shape="point"; height="0.01"; width="0.01"]
-f2_c0 [shape="point"; height="0.01"; width="0.01"]
-f2_c [shape="point"; height="0.01"; width="0.01"]
-f2_c1 [shape="point"; height="0.01"; width="0.01"]
-f2_c2 [shape="point"; height="0.01"; width="0.01"]
+f2_p [width="0.01", shape="point", height="0.01"]
+f2_c0 [width="0.01", shape="point", height="0.01"]
+f2_c [width="0.01", shape="point", height="0.01"]
+f2_c1 [width="0.01", shape="point", height="0.01"]
+f2_c2 [width="0.01", shape="point", height="0.01"]
 {rank=same; Isono_Namihei -- f2_p -- Isono_Fune [style=bold]}
 {rank=same; f2_c0 -- f2_c -- f2_c1 -- f2_c2}
 f2_p -- f2_c
@@ -67,15 +67,15 @@ f2_c0 -- Fuguta_Sazae
 f2_c1 -- Isono_Katsuo
 f2_c2 -- Isono_Wakame
 
-f3_p [shape="point"; height="0.01"; width="0.01"]
+f3_p [width="0.01", shape="point", height="0.01"]
 {rank=same; Namino_Nagie -- f3_p -- Namino_NagieOtto [style=bold]}
 f3_p -- Namino_Norisuke
 
-f4_p [shape="point"; height="0.01"; width="0.01"]
+f4_p [width="0.01", shape="point", height="0.01"]
 {rank=same; Fuguta_Masuo -- f4_p -- Fuguta_Sazae [style=bold]}
 f4_p -- Fuguta_Tarao
 
-f5_p [shape="point"; height="0.01"; width="0.01"]
+f5_p [width="0.01", shape="point", height="0.01"]
 {rank=same; Namino_Norisuke -- f5_p -- Namino_Taiko [style=bold]}
 f5_p -- Namino_Ikura
 
