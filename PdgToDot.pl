@@ -16,8 +16,8 @@ my $attrJoint = hashToAttr(
     }
 );
 
-my $platform       = 'win';                                    # win | linux
-my $charsetConsole = $platform eq 'win' ? 'CP932' : 'UTF-8';
+my $platform       = $^O;                                          # MSWin32 | linux | darwin
+my $charsetConsole = $platform eq 'MSWin32' ? 'CP932' : 'UTF-8';
 my $charsetFile    = 'UTF-8';
 
 binmode( STDIN,  ":encoding($charsetConsole)" );
@@ -30,7 +30,7 @@ if ( !@ARGV ) {
     die("usage: PdgToDot.pl <-|input.pdg>\n");
 }
 
-my $ioLayer = $platform eq 'win' ? "raw:encoding($charsetFile):crlf" : "encoding($charsetFile)";
+my $ioLayer = $platform eq 'MSWin32' ? "raw:encoding($charsetFile):crlf" : "encoding($charsetFile)";
 my $isDirTopBottom = 1;
 my $familyIndex    = -1;
 
