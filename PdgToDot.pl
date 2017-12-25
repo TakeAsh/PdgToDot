@@ -152,8 +152,11 @@ sub convertFamily {
         $rankJoints = '{rank=same; ' . join( ' -- ', @jointChildren ) . '}';
         push( @parentChildren, $jointChildren[1] );
         for ( my $i = 0; $i < @children; ++$i ) {
-            my $terminal = $i == 0 ? $jointChildren[0] : $jointChildren[2];
-            push( @lineJointChildren, $terminal . ' -- ' . $children[$i] );
+            my $joint
+                = $i == @children - 1
+                ? $jointChildren[2]
+                : $jointChildren[ int( 3 * $i / @children ) ];
+            push( @lineJointChildren, $joint . ' -- ' . $children[$i] );
         }
     }
     push( @family, @joints );
