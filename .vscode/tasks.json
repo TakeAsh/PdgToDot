@@ -1,0 +1,55 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Make svg & png",
+      "type": "shell",
+      "problemMatcher": [],
+      "windows": {
+        "command": "nmake -nologo -f ./makefile.win all"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Make svg",
+      "type": "shell",
+      "problemMatcher": [],
+      "windows": {
+        "command": "nmake -nologo -f ./makefile.win svg"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Make png",
+      "type": "shell",
+      "problemMatcher": [],
+      "windows": {
+        "command": "nmake -nologo -f ./makefile.win png"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Make dot",
+      "type": "shell",
+      "problemMatcher": [],
+      "windows": {
+        "command": "nmake -nologo -f ./makefile.win dot"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Make clean",
+      "type": "shell",
+      "problemMatcher": [],
+      "windows": {
+        "command": "nmake -nologo -f ./makefile.win clean"
+      },
+      "group": "build"
+    }
+  ]
+}

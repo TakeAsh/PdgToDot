@@ -1,0 +1,73 @@
+@startPdg "Simpsons"
+
+direction LR // LR
+// dpi 150
+fontname "Sans"
+
+person Abraham {
+  Abraham Simpson
+}
+
+person Mona {
+  Mona Simpson
+}
+
+person Clancy {
+  Clancy Bouvier
+}
+
+person Jackeline {
+  Jackeline Bouvier
+}
+
+person Herb {
+  Herbert Powell
+}
+
+person Homer {
+  Homer Jay Simpson
+}
+
+person Marge {
+  Marjorie Simpson
+}
+
+person Patty {
+  Patty Bouvier
+}
+
+person Selma {
+  Selma Bouvier
+}
+
+person Bart {
+  Bartholomew Jojo Simpson
+}
+
+person Lisa {
+  Lisa Marie Simpson
+}
+
+person Maggie {
+  Margaret Evelyn Simpson
+}
+
+person Ling {
+  Ling Bouvier
+}
+
+generation { Mona Clancy }
+
+generation { Herb Homer Marge Patty Selma }
+
+generation { Bart Lisa Maggie Ling }
+
+(Abraham Mona) - (Herb Homer)
+
+(Clancy Jackeline) - (Marge Patty Selma)
+
+(Homer Marge) - (Bart Lisa Maggie)
+
+(Selma) - (Ling)
+
+@endPdg

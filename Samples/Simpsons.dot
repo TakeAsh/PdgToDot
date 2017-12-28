@@ -1,0 +1,76 @@
+graph "Simpsons" {
+graph [charset="UTF-8", rankdir="TB", splines="ortho"]
+node [fontname="Sans", shape="record"]
+
+// dpi 150
+
+
+Abraham [label="{ Abraham&nbsp;Simpson}"]
+
+Mona [label="{ Mona&nbsp;Simpson}"]
+
+Clancy [label="{ Clancy&nbsp;Bouvier}"]
+
+Jackeline [label="{ Jackeline&nbsp;Bouvier}"]
+
+Herb [label="{ Herbert&nbsp;Powell}"]
+
+Homer [label="{ Homer&nbsp;Jay&nbsp;Simpson}"]
+
+Marge [label="{ Marjorie&nbsp;Simpson}"]
+
+Patty [label="{ Patty&nbsp;Bouvier}"]
+
+Selma [label="{ Selma&nbsp;Bouvier}"]
+
+Bart [label="{ Bartholomew&nbsp;Jojo&nbsp;Simpson}"]
+
+Lisa [label="{ Lisa&nbsp;Marie&nbsp;Simpson}"]
+
+Maggie [label="{ Margaret&nbsp;Evelyn&nbsp;Simpson}"]
+
+Ling [label="{ Ling&nbsp;Bouvier}"]
+
+{rank=same; Mona -- Clancy [style=invis]}
+
+{rank=same; Herb -- Homer -- Marge -- Patty -- Selma [style=invis]}
+
+{rank=same; Bart -- Lisa -- Maggie -- Ling [style=invis]}
+
+f0_p [height="0.01", shape="point", width="0.01"]
+f0_c0 [height="0.01", shape="point", width="0.01"]
+f0_c1 [height="0.01", shape="point", width="0.01"]
+f0_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; Abraham -- f0_p -- Mona [style=bold]}
+{rank=same; f0_c0 -- f0_c1 -- f0_c2}
+f0_p -- f0_c1
+f0_c0 -- Herb
+f0_c2 -- Homer
+
+f1_p [height="0.01", shape="point", width="0.01"]
+f1_c0 [height="0.01", shape="point", width="0.01"]
+f1_c1 [height="0.01", shape="point", width="0.01"]
+f1_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; Clancy -- f1_p -- Jackeline [style=bold]}
+{rank=same; f1_c0 -- f1_c1 -- f1_c2}
+f1_p -- f1_c1
+f1_c0 -- Marge
+f1_c1 -- Patty
+f1_c2 -- Selma
+
+f2_p [height="0.01", shape="point", width="0.01"]
+f2_c0 [height="0.01", shape="point", width="0.01"]
+f2_c1 [height="0.01", shape="point", width="0.01"]
+f2_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; Homer -- f2_p -- Marge [style=bold]}
+{rank=same; f2_c0 -- f2_c1 -- f2_c2}
+f2_p -- f2_c1
+f2_c0 -- Bart
+f2_c1 -- Lisa
+f2_c2 -- Maggie
+
+f3_c [height="0.01", shape="point", width="0.01"]
+Selma -- f3_c
+f3_c -- Ling
+
+}
