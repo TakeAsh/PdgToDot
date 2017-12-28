@@ -2,6 +2,7 @@
 - convert Pedigree to Graphviz dot.
 - [Graphviz - Graph Visualization Software](http://www.graphviz.org/)
 - [Family tree layout with Dot/GraphViz - Stack Overflow](https://stackoverflow.com/questions/2271704/)
+- [dot - In Graphviz, how do I align an edge to the top center of a node? - Stack Overflow](https://stackoverflow.com/questions/27504703/)
 
 ## Usage
 Make .pdg file, convert it to .dot, and convert it to .svg/.png.
@@ -14,3 +15,10 @@ Or,
 cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 ```
 ![Samples/Isono](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Isono.png)
+![Samples/Isono_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Isono_LR.png)
+![Samples/Simpsons](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons.png)
+![Samples/Simpsons_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons_LR.png)
+
+## Known Issue
+- When the children are 3 or more, the joint - child connection might be not proper.  
+Workaround: change the connection in the dot file manually.
