@@ -14,9 +14,15 @@ Or,
 ```
 cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 ```
+
+## Samples
+- Isonos, Top to Bottom
 ![Samples/Isono](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Isono.png)
+- Isonos, Left to Right
 ![Samples/Isono_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Isono_LR.png)
+- Simpsons, Top to Bottom
 ![Samples/Simpsons](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons.png)
+- Simpsons, Left to Right
 ![Samples/Simpsons_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons_LR.png)
 
 ## Known Issue
