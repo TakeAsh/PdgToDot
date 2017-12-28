@@ -55,7 +55,7 @@ f1_c2 [height="0.01", shape="point", width="0.01"]
 {rank=same; f1_c0 -- f1_c1 -- f1_c2}
 f1_p -- f1_c1
 f1_c0 -- Marge
-f1_c1 -- Patty
+f1_c2 -- Patty
 f1_c2 -- Selma
 
 f2_p [height="0.01", shape="point", width="0.01"]
