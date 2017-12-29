@@ -1,18 +1,20 @@
 # PdgToDot sample make file
 
 DIR_SAMPLES = ./Samples
+TARGET1 = Isono
+TARGET2 = Simpsons
 
 SVGS = \
-	$(DIR_SAMPLES)/Isono.svg \
-	$(DIR_SAMPLES)/Simpsons.svg
+	$(DIR_SAMPLES)/$(TARGET1).svg \
+	$(DIR_SAMPLES)/$(TARGET2).svg
 
 PNGS = \
-	$(DIR_SAMPLES)/Isono.png \
-	$(DIR_SAMPLES)/Simpsons.png
+	$(DIR_SAMPLES)/$(TARGET1).png \
+	$(DIR_SAMPLES)/$(TARGET2).png
 
 DOTS = \
-	$(DIR_SAMPLES)/Isono.dot \
-	$(DIR_SAMPLES)/Simpsons.dot
+	$(DIR_SAMPLES)/$(TARGET1).dot \
+	$(DIR_SAMPLES)/$(TARGET2).dot
 
 .SUFFIXES: .svg .png .dot .pdg
 
@@ -40,10 +42,12 @@ dot: $(DOTS)
 clean:
 	del /Q "$(DIR_SAMPLES)\*.svg" "$(DIR_SAMPLES)\*.png" "$(DIR_SAMPLES)\*.dot" "$(DIR_SAMPLES)\*_LR.pdg"
 
-$(DIR_SAMPLES)/Isono.svg:
-$(DIR_SAMPLES)/Isono.png:
-$(DIR_SAMPLES)/Isono.dot:
+$(TARGET1): $(DIR_SAMPLES)/$(TARGET1).svg $(DIR_SAMPLES)/$(TARGET1).png
+$(DIR_SAMPLES)/$(TARGET1).svg:
+$(DIR_SAMPLES)/$(TARGET1).png:
+$(DIR_SAMPLES)/$(TARGET1).dot:
 
-$(DIR_SAMPLES)/Simpsons.svg:
-$(DIR_SAMPLES)/Simpsons.png:
-$(DIR_SAMPLES)/Simpsons.dot:
+$(TARGET2): $(DIR_SAMPLES)/$(TARGET2).svg $(DIR_SAMPLES)/$(TARGET2).png
+$(DIR_SAMPLES)/$(TARGET2).svg:
+$(DIR_SAMPLES)/$(TARGET2).png:
+$(DIR_SAMPLES)/$(TARGET2).dot:
