@@ -29,16 +29,21 @@ DOTS = \
 	perl ./TBtoLR.pl $<
 	perl ./PdgToDot.pl $*_LR.pdg
 
-all: svg png
+.PHONY: all
+all: svg png;
 
+.PHONY: svg
 svg: $(SVGS)
 
+.PHONY: png
 png: $(PNGS)
 
+.PHONY: dot
 dot: $(DOTS)
 
+.PHONY: clean
 clean:
-	del /Q "$(DIR_SAMPLES)\*.svg" "$(DIR_SAMPLES)\*.png" "$(DIR_SAMPLES)\*.dot" "$(DIR_SAMPLES)\*_LR.pdg"
+	rm -f $(DIR_SAMPLES)/*.svg $(DIR_SAMPLES)/*.png $(DIR_SAMPLES)/*.dot $(DIR_SAMPLES)/*_LR.pdg
 
 $(DIR_SAMPLES)/Isono.svg:
 $(DIR_SAMPLES)/Isono.png:
@@ -47,3 +52,4 @@ $(DIR_SAMPLES)/Isono.dot:
 $(DIR_SAMPLES)/Simpsons.svg:
 $(DIR_SAMPLES)/Simpsons.png:
 $(DIR_SAMPLES)/Simpsons.dot:
+
