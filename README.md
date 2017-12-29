@@ -1,5 +1,5 @@
 ﻿# PdgToDot
-- convert Pedigree to Graphviz dot.
+- draw a pedigree diagram with Graphviz dot.
 - [Graphviz - Graph Visualization Software](http://www.graphviz.org/)
 - [Family tree layout with Dot/GraphViz - Stack Overflow](https://stackoverflow.com/questions/2271704/)
 - [dot - In Graphviz, how do I align an edge to the top center of a node? - Stack Overflow](https://stackoverflow.com/questions/27504703/)
@@ -27,4 +27,5 @@ cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 
 ## Known Issue
 - When the children are 3 or more, the joint - child connection might be not proper.  
-Workaround: change the connection in the dot file manually.
+Workaround: change the connection in the dot file manually.  
+see: [fix Simpsons (changing joint - Patty connection manually)](https://github.com/TakeAsh/PdgToDot/commit/36274108776088cdb87cee1996bb674c4de24f2f)
