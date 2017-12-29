@@ -7,6 +7,9 @@
       "label": "Make svg & png",
       "type": "shell",
       "problemMatcher": [],
+      "linux": {
+        "command": "make -f makefile all"
+      },
       "windows": {
         "command": "nmake -nologo -f ./makefile.win all"
       },
@@ -19,6 +22,9 @@
       "label": "Make svg",
       "type": "shell",
       "problemMatcher": [],
+      "linux": {
+        "command": "make -f makefile svg"
+      },
       "windows": {
         "command": "nmake -nologo -f ./makefile.win svg"
       },
@@ -28,6 +34,9 @@
       "label": "Make png",
       "type": "shell",
       "problemMatcher": [],
+      "linux": {
+        "command": "make -f makefile png"
+      },
       "windows": {
         "command": "nmake -nologo -f ./makefile.win png"
       },
@@ -37,6 +46,9 @@
       "label": "Make dot",
       "type": "shell",
       "problemMatcher": [],
+      "linux": {
+        "command": "make -f makefile dot"
+      },
       "windows": {
         "command": "nmake -nologo -f ./makefile.win dot"
       },
@@ -46,6 +58,9 @@
       "label": "Make clean",
       "type": "shell",
       "problemMatcher": [],
+      "linux": {
+        "command": "make -f makefile clean"
+      },
       "windows": {
         "command": "nmake -nologo -f ./makefile.win clean"
       },
