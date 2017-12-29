@@ -25,6 +25,56 @@ cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 - Simpsons, Left to Right
 ![Samples/Simpsons_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons_LR.png)
 
+## Pedigree format
+
+### Start
+```
+@startPdg "<name>"
+```
+- The pedigree format must start `@startPdg`.
+- `@startPdg` takes the diagram name option. The double quotations are required.
+
+### Diagram attribute
+```
+direction <TB|LR>
+dpi <number>
+fontname "<name>"
+```
+- `direction` specifies the diagram direction. `direction` takes the option `TB` (Top to Bottom) or `LR` (Left to Right).
+- `dpi` specifies the output resolution.
+- `fontname` specifies the font face of the person. The double quotations are required.
+
+### Person
+```
+person <name> {
+  <display name>
+  [<comment>...]
+}
+```
+- `person` block difines the person.
+- `name` is the label, and is used for `generation`/`family` later.
+- `display name` is displayed in the diagram.
+- `comment` is also displayed if exist.
+
+### Generation
+```
+generation { <person> <person> [<person>...] }
+```
+- `generation` specifies the persons that should be aligned on the same level.
+
+### Family
+```
+( <person> [<person>] ) - ( <person> [<person>...] )
+```
+- The first block in the parenthesis indicates the parents.
+- The second block in the parenthesis indicates the children.
+
+### End
+```
+@endPdg
+```
+- `@endPdg` indicate the end of the pedigree format.
+
 ## Known Issue
 - When the children are 3 or more, the joint - child connection might be not proper.  
 Workaround: change the connection in the dot file manually.  
