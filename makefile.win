@@ -3,18 +3,22 @@
 DIR_SAMPLES = ./Samples
 TARGET1 = Isono
 TARGET2 = Simpsons
+TARGET3 = Joestars
 
 SVGS = \
 	$(DIR_SAMPLES)/$(TARGET1).svg \
-	$(DIR_SAMPLES)/$(TARGET2).svg
+	$(DIR_SAMPLES)/$(TARGET2).svg \
+	$(DIR_SAMPLES)/$(TARGET3).svg
 
 PNGS = \
 	$(DIR_SAMPLES)/$(TARGET1).png \
-	$(DIR_SAMPLES)/$(TARGET2).png
+	$(DIR_SAMPLES)/$(TARGET2).png \
+	$(DIR_SAMPLES)/$(TARGET3).png
 
 DOTS = \
 	$(DIR_SAMPLES)/$(TARGET1).dot \
-	$(DIR_SAMPLES)/$(TARGET2).dot
+	$(DIR_SAMPLES)/$(TARGET2).dot \
+	$(DIR_SAMPLES)/$(TARGET3).dot
 
 .SUFFIXES: .svg .png .dot .pdg
 
@@ -51,3 +55,8 @@ $(TARGET2): $(DIR_SAMPLES)/$(TARGET2).svg $(DIR_SAMPLES)/$(TARGET2).png
 $(DIR_SAMPLES)/$(TARGET2).svg:
 $(DIR_SAMPLES)/$(TARGET2).png:
 $(DIR_SAMPLES)/$(TARGET2).dot:
+
+$(TARGET3): $(DIR_SAMPLES)/$(TARGET3).svg $(DIR_SAMPLES)/$(TARGET3).png
+$(DIR_SAMPLES)/$(TARGET3).svg:
+$(DIR_SAMPLES)/$(TARGET3).png:
+$(DIR_SAMPLES)/$(TARGET3).dot:

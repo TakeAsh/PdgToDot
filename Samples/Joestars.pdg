@@ -1,0 +1,117 @@
+@startPdg "Joestars"
+
+direction TB
+fontname "Sans"
+
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+person GeorgeI {
+  George Joestar I
+  ジョージ・ジョースター 1世
+} [%male]
+
+person Mary {
+  Mary
+  メアリー
+} [%female]
+
+person Dario {
+  Dario Brando
+  ダリオ・ブランドー
+} [%male]
+
+person Jonathan {
+  Jonathan Joestar
+  ジョナサン・ジョースター
+} [%male]
+
+person Erina {
+  Erina Pendleton
+  エリナ・ペンドルトン
+} [%female]
+
+person Dio {
+  Dio
+  ディオ・ブランドー
+} [%male]
+
+person GeorgeII {
+  George Joestar II
+  ジョージ・ジョースター 2世
+} [%male]
+
+person LisaLisa {
+  Lisa Lisa
+  リサリサ
+} [%female]
+
+person Joseph {
+  Joseph Joestar
+  ジョセフ・ジョースター
+} [%male]
+
+person SuziQ {
+  Suzi Q
+  スージー・Q
+} [%female]
+
+person Tomoko {
+  Tomoko Higashikata
+  東方 朋子
+} [%female]
+
+person Sadao {
+  Sadao Kujo
+  空条 貞夫
+} [%male]
+
+person Holy {
+  Holy
+  ホリィ
+} [%female]
+
+person Jotaro {
+  Jotaro Kujo
+  空条 承太郎
+} [%male]
+
+person JotaroWife {
+  ?
+} [%female]
+
+person Jolyne {
+  Jolyne Cujoh
+  空条 徐倫
+} [%female]
+
+person Josuke {
+  Josuke Higashikata
+  東方 仗助
+} [%male]
+
+generation { Dario GeorgeI }
+
+generation { Dio Jonathan }
+
+generation { Tomoko Joseph SuziQ }
+
+generation { Josuke Jotaro }
+
+(Dario) - (Dio)
+
+(GeorgeI Mary) - (Dio Jonathan)
+
+(Jonathan Erina) - (GeorgeII)
+
+(GeorgeII LisaLisa) - (Joseph)
+
+(Tomoko Joseph) - (Josuke)
+
+(Joseph SuziQ) - (Holy)
+
+(Sadao Holy) - (Jotaro)
+
+(Jotaro JotaroWife) - (Jolyne)
+
+@endPdg
