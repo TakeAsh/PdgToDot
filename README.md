@@ -89,5 +89,6 @@ generation { <person> <person> [<person>...] }
 
 ## Known Issue
 - When the children are 3 or more, the joint - child connection might be not proper.  
-Workaround: change the connection in the dot file manually.  
+Workaround: specify the joint to be connected by `joint`.  
+see: [support modify for dot output](https://github.com/TakeAsh/PdgToDot/commit/35bc23d1d263707b5fd708303bacccb007a2734f)  
 see: [fix Simpsons (changing joint - Patty connection manually)](https://github.com/TakeAsh/PdgToDot/commit/36274108776088cdb87cee1996bb674c4de24f2f)
