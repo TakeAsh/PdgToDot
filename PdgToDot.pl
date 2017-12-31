@@ -31,8 +31,9 @@ if ( !@ARGV ) {
 }
 
 my $ioLayer = $platform eq 'MSWin32' ? "raw:encoding($charsetFile):crlf" : "encoding($charsetFile)";
-my $isDirTopBottom = 1;
-my $familyIndex    = -1;
+my $isDirTopBottom  = 1;
+my %namedAttributes = ();
+my $familyIndex     = -1;
 
 my $fileNameIn = shift(@ARGV);
 if ( $fileNameIn eq '-' ) {
@@ -70,14 +71,15 @@ sub convertFile {
 sub convertBody {
     my $body = shift or return;
     my %graphAttr = ( 'charset' => $charsetFile, 'splines' => 'ortho' );
-    getAttribute( \$body, \%graphAttr, 'rankdir', qr(^\s*direction\s+(\S+).*$)m );
-    getAttribute( \$body, \%graphAttr, 'dpi',     qr(^\s*dpi\s+(\S+).*$)m );
+    getGlobalAttribute( \$body, \%graphAttr, 'rankdir', qr(^\s*direction\s+(\S+).*$)m );
+    getGlobalAttribute( \$body, \%graphAttr, 'dpi',     qr(^\s*dpi\s+(\S+).*$)m );
     my %nodeAttr = ( 'shape' => 'record', );
-    getAttribute( \$body, \%nodeAttr, 'fontname', qr(^\s*fontname\s+"([^"]+)".*$)m );
+    getGlobalAttribute( \$body, \%nodeAttr, 'fontname', qr(^\s*fontname\s+"([^"]+)".*$)m );
     setDefault( \$body, 'node',  \%nodeAttr );
     setDefault( \$body, 'graph', \%graphAttr );
     $isDirTopBottom = $graphAttr{'rankdir'} eq 'TB' ? 1 : 0;
-    $body =~ s/person\s+(\S+)\s+\{([^\}]+)\}/convertPerson($1, $2)/eg;
+    $body =~ s/attribute\s+(%\S+)\s+\{([^\}]+)\}/getNamedAttribute($1, $2)/eg;
+    $body =~ s/person\s+(\S+)\s+\{([^\}]+)\}(?:\s+\[([^\]]+)\])?/convertPerson($1, $2, $3)/eg;
     $body =~ s/generation\s*\{([^\}]+)\}/convertGeneration($1)/eg;
     $body =~ s/\(([^\)]+)\)\s*-\s*\(([^\)]+)\)/convertFamily($1, $2)/eg;
     $body =~ s/\@startPdg\s+"([^"]+)"\s*/graph "$1" {\n/;
@@ -85,7 +87,7 @@ sub convertBody {
     return $body;
 }
 
-sub getAttribute {
+sub getGlobalAttribute {
     my ( $refBody, $refHash, $name, $reg ) = @_;
     if ( ${$refBody} !~ $reg ) {
         return;
@@ -100,8 +102,21 @@ sub setDefault {
     ${$refBody} =~ s/(^\@startPdg\s+.*$)/$1\n$name $attr/m;
 }
 
+sub getNamedAttribute {
+    my ( $name, $attributes ) = @_;
+    $namedAttributes{$name} = {
+        map {
+            $_ = trim($_);
+            my ( $key, $value ) = split( /\s*=\s*/, $_ );
+            $value =~ s/^"(.*)"$/$1/;
+            $key => $value;
+        } split( /[,;]/, trim($attributes) )
+    };
+    return '';
+}
+
 sub convertPerson {
-    my ( $label, $body ) = @_;
+    my ( $label, $body, $attributes ) = @_;
     $body = trim($body);
     my @commnet = map { $_ = trim($_); s/\s+/&nbsp;/g; $_; } split( /\n/, $body );
     my @attrLabels = ( ' ' . shift(@commnet) );
@@ -112,7 +127,20 @@ sub convertPerson {
         = $isDirTopBottom
         ? '{' . join( '| ', @attrLabels ) . '}'
         : join( '| ', @attrLabels );
-    return $label . ' ' . hashToAttr( { label => $attLabel } );
+    my %attributes = ();
+    if ($attributes) {
+        map {
+            $_ = trim($_);
+            if ( substr( $_, 0, 1 ) eq '%' && $namedAttributes{$_} ) {
+                %attributes = ( %attributes, %{ $namedAttributes{$_} } );
+            } else {
+                my ( $key, $value ) = split( /\s*=\s*/, $_ );
+                $value =~ s/^"(.*)"$/$1/;
+                $attributes{$key} = $value;
+            }
+        } split( /[,;]/, trim($attributes) );
+    }
+    return $label . ' ' . hashToAttr( { %attributes, label => $attLabel } );
 }
 
 sub convertGeneration {

@@ -4,42 +4,47 @@ direction TB // LR
 // dpi 150
 fontname "Sans"
 
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor=pink }
+attribute %leader { fillcolor="yellow" }
+attribute %viceleader { fillcolor=palegreen }
+
 person Isono_Mokuzu {
   磯野 藻屑 源素太皆
   磯野家のご先祖
-}
+} [%male, fillcolor="khaki"]
 
 person Fuguta_Haha {
   フグ田
   住所: 大阪府
-}
+} [style=filled, fillcolor=pink]
 
 person Isono_Umihei {
   磯野 海平
   長男
   住所: 福岡県
   出生: 1895.09.14
-}
+} [%male]
 
 person Isono_Namihei {
   磯野 波平
   次男
   住所: 東京都
   出生: 1895.09.14
-}
+} [%male]
 
 person Isono_Fune {
   磯野 フネ
   波平の妻
   住所: 東京都
   出生: 1901.
-}
+} [%female]
 
 person Namino_Nagie {
   波野 なぎえ
   長女
   住所: 福岡県
-}
+} [%female]
 
 person Namino_NagieOtto {
   波野
@@ -51,53 +56,53 @@ person Fuguta_Masuo {
   次男
   住所: 東京都
   出生: 1917.
-}
+} [%male]
 
 person Fuguta_Sazae {
   フグ田 サザエ
   長女
   住所: 東京都
   出生: 1922.11.22
-}
+} [%female, %leader]
 
 person Isono_Katsuo {
   磯野 カツオ
   長男
   住所: 東京都
   出生: 1938.
-}
+} [%male, %viceleader]
 
 person Isono_Wakame {
   磯野 ワカメ
   次女
   住所: 東京都
   出生: 1942.
-}
+} [%female, %viceleader]
 
 person Namino_Norisuke {
   波野 ノリスケ
   三男
   住所: 東京都
-}
+} [%male]
 
 person Namino_Taiko {
   波野 タイ子
   ノリスケの妻
   住所: 東京都
-}
+} [%female]
 
 person Fuguta_Tarao {
   フグ田 タラオ
   長男
   住所: 東京都
   出生: 1947.10.
-}
+} [%male]
 
 person Namino_Ikura {
   波野 イクラ
   長男
   住所: 東京都
-}
+} [%male]
 
 // generation { Isono_Mokuzu }
 

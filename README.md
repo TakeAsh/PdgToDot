@@ -44,17 +44,27 @@ fontname "<name>"
 - `dpi` specifies the output resolution.
 - `fontname` specifies the font face of the person. The double quotations are required.
 
+### Named Attribute
+```
+attribute %<name> { <attribute> [, <attribute>...] }
+```
+- `attribute` block defines the named attribute.
+- `name` must start `%` sign.
+- `name` is the label, and is used for `person` later.
+
 ### Person
 ```
 person <name> {
   <display name>
   [<comment>...]
-}
+} [<attribute> [, <attribute>...] ]
 ```
 - `person` block difines the person.
 - `name` is the label, and is used for `generation`/`family` later.
 - `display name` is displayed in the diagram.
 - `comment` is also displayed if exist.
+- `attribute` is the named attribute or dot's attribute.
+- If defining same attribute repeatedly, the latter is effective.
 
 ### Generation
 ```

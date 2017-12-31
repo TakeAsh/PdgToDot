@@ -5,35 +5,40 @@ node [fontname="Sans", shape="record"]
 // dpi 150
 
 
-Isono_Mokuzu [label="{ 磯野&nbsp;藻屑&nbsp;源素太皆| 磯野家のご先祖\l}"]
 
-Fuguta_Haha [label="{ フグ田| 住所:&nbsp;大阪府\l}"]
 
-Isono_Umihei [label="{ 磯野&nbsp;海平| 長男\l住所:&nbsp;福岡県\l出生:&nbsp;1895.09.14\l}"]
 
-Isono_Namihei [label="{ 磯野&nbsp;波平| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1895.09.14\l}"]
 
-Isono_Fune [label="{ 磯野&nbsp;フネ| 波平の妻\l住所:&nbsp;東京都\l出生:&nbsp;1901.\l}"]
 
-Namino_Nagie [label="{ 波野&nbsp;なぎえ| 長女\l住所:&nbsp;福岡県\l}"]
+Isono_Mokuzu [color="blue", fillcolor="khaki", label="{ 磯野&nbsp;藻屑&nbsp;源素太皆| 磯野家のご先祖\l}", style="filled"]
+
+Fuguta_Haha [fillcolor="pink", label="{ フグ田| 住所:&nbsp;大阪府\l}", style="filled"]
+
+Isono_Umihei [color="blue", fillcolor="lightblue", label="{ 磯野&nbsp;海平| 長男\l住所:&nbsp;福岡県\l出生:&nbsp;1895.09.14\l}", style="filled"]
+
+Isono_Namihei [color="blue", fillcolor="lightblue", label="{ 磯野&nbsp;波平| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1895.09.14\l}", style="filled"]
+
+Isono_Fune [color="red", fillcolor="pink", label="{ 磯野&nbsp;フネ| 波平の妻\l住所:&nbsp;東京都\l出生:&nbsp;1901.\l}", style="filled"]
+
+Namino_Nagie [color="red", fillcolor="pink", label="{ 波野&nbsp;なぎえ| 長女\l住所:&nbsp;福岡県\l}", style="filled"]
 
 Namino_NagieOtto [label="{ 波野| なぎえの夫\l}"]
 
-Fuguta_Masuo [label="{ フグ田&nbsp;マスオ| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1917.\l}"]
+Fuguta_Masuo [color="blue", fillcolor="lightblue", label="{ フグ田&nbsp;マスオ| 次男\l住所:&nbsp;東京都\l出生:&nbsp;1917.\l}", style="filled"]
 
-Fuguta_Sazae [label="{ フグ田&nbsp;サザエ| 長女\l住所:&nbsp;東京都\l出生:&nbsp;1922.11.22\l}"]
+Fuguta_Sazae [color="red", fillcolor="yellow", label="{ フグ田&nbsp;サザエ| 長女\l住所:&nbsp;東京都\l出生:&nbsp;1922.11.22\l}", style="filled"]
 
-Isono_Katsuo [label="{ 磯野&nbsp;カツオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1938.\l}"]
+Isono_Katsuo [color="blue", fillcolor="palegreen", label="{ 磯野&nbsp;カツオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1938.\l}", style="filled"]
 
-Isono_Wakame [label="{ 磯野&nbsp;ワカメ| 次女\l住所:&nbsp;東京都\l出生:&nbsp;1942.\l}"]
+Isono_Wakame [color="red", fillcolor="palegreen", label="{ 磯野&nbsp;ワカメ| 次女\l住所:&nbsp;東京都\l出生:&nbsp;1942.\l}", style="filled"]
 
-Namino_Norisuke [label="{ 波野&nbsp;ノリスケ| 三男\l住所:&nbsp;東京都\l}"]
+Namino_Norisuke [color="blue", fillcolor="lightblue", label="{ 波野&nbsp;ノリスケ| 三男\l住所:&nbsp;東京都\l}", style="filled"]
 
-Namino_Taiko [label="{ 波野&nbsp;タイ子| ノリスケの妻\l住所:&nbsp;東京都\l}"]
+Namino_Taiko [color="red", fillcolor="pink", label="{ 波野&nbsp;タイ子| ノリスケの妻\l住所:&nbsp;東京都\l}", style="filled"]
 
-Fuguta_Tarao [label="{ フグ田&nbsp;タラオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1947.10.\l}"]
+Fuguta_Tarao [color="blue", fillcolor="lightblue", label="{ フグ田&nbsp;タラオ| 長男\l住所:&nbsp;東京都\l出生:&nbsp;1947.10.\l}", style="filled"]
 
-Namino_Ikura [label="{ 波野&nbsp;イクラ| 長男\l住所:&nbsp;東京都\l}"]
+Namino_Ikura [color="blue", fillcolor="lightblue", label="{ 波野&nbsp;イクラ| 長男\l住所:&nbsp;東京都\l}", style="filled"]
 
 // {rank=same; Isono_Mokuzu [style=invis]}
 
