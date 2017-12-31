@@ -74,10 +74,12 @@ generation { <person> <person> [<person>...] }
 
 ### Family
 ```
-( <person> [<person>] ) - ( <person> [<person>...] )
+( <person> [<person>] ) - ( <person> [{<modify>}] [<person>...] )
 ```
 - The first block in the parenthesis indicates the parents.
 - The second block in the parenthesis indicates the children.
+- `modify` specifies the modification of the dot output.
+    - `joint` specifies the joint connected to the child. The value is 0, 1, or 2.
 
 ### End
 ```

@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-287 641.44,-287 641.44,4 -4,4"/>
 <!-- Abraham -->
 <g id="node1" class="node"><title>Abraham</title>
-<polygon fill="none" stroke="black" points="0,-246.5 0,-282.5 141,-282.5 141,-246.5 0,-246.5"/>
+<polygon fill="lightblue" stroke="blue" points="0,-246.5 0,-282.5 141,-282.5 141,-246.5 0,-246.5"/>
 <text text-anchor="middle" x="70.5" y="-260.8" font-family="Sans" font-size="14.00">Abraham Simpson</text>
 </g>
 <!-- f0_p -->
@@ -24,12 +24,12 @@
 </g>
 <!-- Mona -->
 <g id="node2" class="node"><title>Mona</title>
-<polygon fill="none" stroke="black" points="12.5,-172.5 12.5,-208.5 128.5,-208.5 128.5,-172.5 12.5,-172.5"/>
+<polygon fill="pink" stroke="red" points="12.5,-172.5 12.5,-208.5 128.5,-208.5 128.5,-172.5 12.5,-172.5"/>
 <text text-anchor="middle" x="70.5" y="-186.8" font-family="Sans" font-size="14.00">Mona Simpson</text>
 </g>
 <!-- Clancy -->
 <g id="node3" class="node"><title>Clancy</title>
-<polygon fill="none" stroke="black" points="10.5,-117.5 10.5,-153.5 130.5,-153.5 130.5,-117.5 10.5,-117.5"/>
+<polygon fill="lightblue" stroke="blue" points="10.5,-117.5 10.5,-153.5 130.5,-153.5 130.5,-117.5 10.5,-117.5"/>
 <text text-anchor="middle" x="70.5" y="-131.8" font-family="Sans" font-size="14.00">Clancy Bouvier</text>
 </g>
 <!-- Mona&#45;&#45;Clancy -->
@@ -43,23 +43,23 @@
 </g>
 <!-- Jackeline -->
 <g id="node4" class="node"><title>Jackeline</title>
-<polygon fill="none" stroke="black" points="3,-43.5 3,-79.5 138,-79.5 138,-43.5 3,-43.5"/>
+<polygon fill="pink" stroke="red" points="3,-43.5 3,-79.5 138,-79.5 138,-43.5 3,-43.5"/>
 <text text-anchor="middle" x="70.5" y="-57.8" font-family="Sans" font-size="14.00">Jackeline Bouvier</text>
 </g>
 <!-- Herb -->
 <g id="node5" class="node"><title>Herb</title>
-<polygon fill="none" stroke="black" points="228.72,-239.5 228.72,-275.5 348.72,-275.5 348.72,-239.5 228.72,-239.5"/>
+<polygon fill="lightblue" stroke="blue" points="228.72,-239.5 228.72,-275.5 348.72,-275.5 348.72,-239.5 228.72,-239.5"/>
 <text text-anchor="middle" x="288.72" y="-253.8" font-family="Sans" font-size="14.00">Herbert Powell</text>
 </g>
 <!-- Homer -->
 <g id="node6" class="node"><title>Homer</title>
-<polygon fill="none" stroke="black" points="213.72,-184.5 213.72,-220.5 363.72,-220.5 363.72,-184.5 213.72,-184.5"/>
+<polygon fill="lightblue" stroke="blue" points="213.72,-184.5 213.72,-220.5 363.72,-220.5 363.72,-184.5 213.72,-184.5"/>
 <text text-anchor="middle" x="288.72" y="-198.8" font-family="Sans" font-size="14.00">Homer Jay Simpson</text>
 </g>
 <!-- Herb&#45;&#45;Homer -->
 <!-- Marge -->
 <g id="node7" class="node"><title>Marge</title>
-<polygon fill="none" stroke="black" points="221.22,-110.5 221.22,-146.5 356.22,-146.5 356.22,-110.5 221.22,-110.5"/>
+<polygon fill="pink" stroke="red" points="221.22,-110.5 221.22,-146.5 356.22,-146.5 356.22,-110.5 221.22,-110.5"/>
 <text text-anchor="middle" x="288.72" y="-124.8" font-family="Sans" font-size="14.00">Marjorie Simpson</text>
 </g>
 <!-- Homer&#45;&#45;Marge -->
@@ -73,13 +73,13 @@
 </g>
 <!-- Patty -->
 <g id="node8" class="node"><title>Patty</title>
-<polygon fill="none" stroke="black" points="232.72,-55.5 232.72,-91.5 344.72,-91.5 344.72,-55.5 232.72,-55.5"/>
+<polygon fill="pink" stroke="red" points="232.72,-55.5 232.72,-91.5 344.72,-91.5 344.72,-55.5 232.72,-55.5"/>
 <text text-anchor="middle" x="288.72" y="-69.8" font-family="Sans" font-size="14.00">Patty Bouvier</text>
 </g>
 <!-- Marge&#45;&#45;Patty -->
 <!-- Selma -->
 <g id="node9" class="node"><title>Selma</title>
-<polygon fill="none" stroke="black" points="230.72,-0.5 230.72,-36.5 346.72,-36.5 346.72,-0.5 230.72,-0.5"/>
+<polygon fill="pink" stroke="red" points="230.72,-0.5 230.72,-36.5 346.72,-36.5 346.72,-0.5 230.72,-0.5"/>
 <text text-anchor="middle" x="288.72" y="-14.8" font-family="Sans" font-size="14.00">Selma Bouvier</text>
 </g>
 <!-- Patty&#45;&#45;Selma -->
@@ -93,24 +93,24 @@
 </g>
 <!-- Bart -->
 <g id="node10" class="node"><title>Bart</title>
-<polygon fill="none" stroke="black" points="436.44,-190.5 436.44,-226.5 637.44,-226.5 637.44,-190.5 436.44,-190.5"/>
+<polygon fill="lightblue" stroke="blue" points="436.44,-190.5 436.44,-226.5 637.44,-226.5 637.44,-190.5 436.44,-190.5"/>
 <text text-anchor="middle" x="536.94" y="-204.8" font-family="Sans" font-size="14.00">Bartholomew Jojo Simpson</text>
 </g>
 <!-- Lisa -->
 <g id="node11" class="node"><title>Lisa</title>
-<polygon fill="none" stroke="black" points="462.44,-135.5 462.44,-171.5 611.44,-171.5 611.44,-135.5 462.44,-135.5"/>
+<polygon fill="pink" stroke="red" points="462.44,-135.5 462.44,-171.5 611.44,-171.5 611.44,-135.5 462.44,-135.5"/>
 <text text-anchor="middle" x="536.94" y="-149.8" font-family="Sans" font-size="14.00">Lisa Marie Simpson</text>
 </g>
 <!-- Bart&#45;&#45;Lisa -->
 <!-- Maggie -->
 <g id="node12" class="node"><title>Maggie</title>
-<polygon fill="none" stroke="black" points="440.44,-80.5 440.44,-116.5 633.44,-116.5 633.44,-80.5 440.44,-80.5"/>
+<polygon fill="pink" stroke="red" points="440.44,-80.5 440.44,-116.5 633.44,-116.5 633.44,-80.5 440.44,-80.5"/>
 <text text-anchor="middle" x="536.94" y="-94.8" font-family="Sans" font-size="14.00">Margaret Evelyn Simpson</text>
 </g>
 <!-- Lisa&#45;&#45;Maggie -->
 <!-- Ling -->
 <g id="node13" class="node"><title>Ling</title>
-<polygon fill="none" stroke="black" points="484.94,-23.5 484.94,-59.5 588.94,-59.5 588.94,-23.5 484.94,-23.5"/>
+<polygon fill="pink" stroke="red" points="484.94,-23.5 484.94,-59.5 588.94,-59.5 588.94,-23.5 484.94,-23.5"/>
 <text text-anchor="middle" x="536.94" y="-37.8" font-family="Sans" font-size="14.00">Ling Bouvier</text>
 </g>
 <!-- Maggie&#45;&#45;Ling -->

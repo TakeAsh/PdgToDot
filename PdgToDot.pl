@@ -34,6 +34,7 @@ my $ioLayer = $platform eq 'MSWin32' ? "raw:encoding($charsetFile):crlf" : "enco
 my $isDirTopBottom  = 1;
 my %namedAttributes = ();
 my $familyIndex     = -1;
+my %familyModifies  = ();
 
 my $fileNameIn = shift(@ARGV);
 if ( $fileNameIn eq '-' ) {
@@ -151,14 +152,17 @@ sub convertGeneration {
 sub convertFamily {
     my ( $parents, $children ) = @_;
     ++$familyIndex;
-    my @family            = ();
-    my @parents           = split( /\s+/, trim($parents) );
-    my @children          = split( /\s+/, trim($children) );
-    my @joints            = ();
+    my @family = ();
+    %familyModifies = ();
+    $children =~ s/(\S+)\s*\{([^\}]+)\}/getFamilyModify($1, $2)/eg;
+    my @parents  = split( /\s+/, trim($parents) );
+    my @children = split( /\s+/, trim($children) );
+    my @joints   = ();
     my @parentChildren    = ();
     my @lineJointChildren = ();
     my $rankParents       = undef;
     my $rankJoints        = undef;
+
     if ( @parents < 2 ) {
         push( @parentChildren, $parents[0] );
     } else {
@@ -181,9 +185,10 @@ sub convertFamily {
         push( @parentChildren, $jointChildren[1] );
         for ( my $i = 0; $i < @children; ++$i ) {
             my $joint
-                = $i == @children - 1
-                ? $jointChildren[2]
-                : $jointChildren[ int( 3 * $i / @children ) ];
+                = $familyModifies{ $children[$i] } && $familyModifies{ $children[$i] }{'joint'}
+                ? $jointChildren[ $familyModifies{ $children[$i] }{'joint'} ]
+                : $i == @children - 1 ? $jointChildren[2]
+                :                       $jointChildren[ int( 3 * $i / @children ) ];
             push( @lineJointChildren, $joint . ' -- ' . $children[$i] );
         }
     }
@@ -199,6 +204,19 @@ sub convertFamily {
         push( @family, @lineJointChildren );
     }
     return join( "\n", @family );
+}
+
+sub getFamilyModify {
+    my ( $name, $modify ) = @_;
+    $familyModifies{$name} = {
+        map {
+            $_ = trim($_);
+            my ( $key, $value ) = split( /\s*=\s*/, $_ );
+            $value =~ s/^"(.*)"$/$1/;
+            $key => $value;
+        } split( /[,;]/, trim($modify) )
+    };
+    return $name;
 }
 
 sub hashToAttr {

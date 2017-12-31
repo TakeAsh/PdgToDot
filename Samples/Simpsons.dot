@@ -5,31 +5,34 @@ node [fontname="Sans", shape="record"]
 // dpi 150
 
 
-Abraham [label="{ Abraham&nbsp;Simpson}"]
 
-Mona [label="{ Mona&nbsp;Simpson}"]
 
-Clancy [label="{ Clancy&nbsp;Bouvier}"]
 
-Jackeline [label="{ Jackeline&nbsp;Bouvier}"]
+Abraham [color="blue", fillcolor="lightblue", label="{ Abraham&nbsp;Simpson}", style="filled"]
 
-Herb [label="{ Herbert&nbsp;Powell}"]
+Mona [color="red", fillcolor="pink", label="{ Mona&nbsp;Simpson}", style="filled"]
 
-Homer [label="{ Homer&nbsp;Jay&nbsp;Simpson}"]
+Clancy [color="blue", fillcolor="lightblue", label="{ Clancy&nbsp;Bouvier}", style="filled"]
 
-Marge [label="{ Marjorie&nbsp;Simpson}"]
+Jackeline [color="red", fillcolor="pink", label="{ Jackeline&nbsp;Bouvier}", style="filled"]
 
-Patty [label="{ Patty&nbsp;Bouvier}"]
+Herb [color="blue", fillcolor="lightblue", label="{ Herbert&nbsp;Powell}", style="filled"]
 
-Selma [label="{ Selma&nbsp;Bouvier}"]
+Homer [color="blue", fillcolor="lightblue", label="{ Homer&nbsp;Jay&nbsp;Simpson}", style="filled"]
 
-Bart [label="{ Bartholomew&nbsp;Jojo&nbsp;Simpson}"]
+Marge [color="red", fillcolor="pink", label="{ Marjorie&nbsp;Simpson}", style="filled"]
 
-Lisa [label="{ Lisa&nbsp;Marie&nbsp;Simpson}"]
+Patty [color="red", fillcolor="pink", label="{ Patty&nbsp;Bouvier}", style="filled"]
 
-Maggie [label="{ Margaret&nbsp;Evelyn&nbsp;Simpson}"]
+Selma [color="red", fillcolor="pink", label="{ Selma&nbsp;Bouvier}", style="filled"]
 
-Ling [label="{ Ling&nbsp;Bouvier}"]
+Bart [color="blue", fillcolor="lightblue", label="{ Bartholomew&nbsp;Jojo&nbsp;Simpson}", style="filled"]
+
+Lisa [color="red", fillcolor="pink", label="{ Lisa&nbsp;Marie&nbsp;Simpson}", style="filled"]
+
+Maggie [color="red", fillcolor="pink", label="{ Margaret&nbsp;Evelyn&nbsp;Simpson}", style="filled"]
+
+Ling [color="red", fillcolor="pink", label="{ Ling&nbsp;Bouvier}", style="filled"]
 
 {rank=same; Mona -- Clancy [style=invis]}
 

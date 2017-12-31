@@ -4,57 +4,60 @@ direction TB // LR
 // dpi 150
 fontname "Sans"
 
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
 person Abraham {
   Abraham Simpson
-}
+} [%male]
 
 person Mona {
   Mona Simpson
-}
+} [%female]
 
 person Clancy {
   Clancy Bouvier
-}
+} [%male]
 
 person Jackeline {
   Jackeline Bouvier
-}
+} [%female]
 
 person Herb {
   Herbert Powell
-}
+} [%male]
 
 person Homer {
   Homer Jay Simpson
-}
+} [%male]
 
 person Marge {
   Marjorie Simpson
-}
+} [%female]
 
 person Patty {
   Patty Bouvier
-}
+} [%female]
 
 person Selma {
   Selma Bouvier
-}
+} [%female]
 
 person Bart {
   Bartholomew Jojo Simpson
-}
+} [%male]
 
 person Lisa {
   Lisa Marie Simpson
-}
+} [%female]
 
 person Maggie {
   Margaret Evelyn Simpson
-}
+} [%female]
 
 person Ling {
   Ling Bouvier
-}
+} [%female]
 
 generation { Mona Clancy }
 
@@ -64,7 +67,7 @@ generation { Bart Lisa Maggie Ling }
 
 (Abraham Mona) - (Herb Homer)
 
-(Clancy Jackeline) - (Marge Patty Selma)
+(Clancy Jackeline) - (Marge Patty {joint=2} Selma)
 
 (Homer Marge) - (Bart Lisa Maggie)
 
