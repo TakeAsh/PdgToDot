@@ -83,6 +83,7 @@ sub convertBody {
     $body =~ s/person\s+(\S+)\s+\{([^\}]+)\}(?:\s+\[([^\]]+)\])?/convertPerson($1, $2, $3)/eg;
     $body =~ s/generation\s*\{([^\}]+)\}/convertGeneration($1)/eg;
     $body =~ s/\(([^\)]+)\)\s*-\s*\(([^\)]+)\)/convertFamily($1, $2)/eg;
+    $body =~ s/\(([^\)]+)\)/convertCouple($1)/eg;
     $body =~ s/\@startPdg\s+"([^"]+)"\s*/graph "$1" {\n/;
     $body =~ s/\@endPdg\s*/}\n/;
     return $body;
@@ -184,9 +185,9 @@ sub convertFamily {
         $rankJoints = '{rank=same; ' . join( ' -- ', @jointChildren ) . '}';
         push( @parentChildren, $jointChildren[1] );
         for ( my $i = 0; $i < @children; ++$i ) {
+            my $modify = $familyModifies{ $children[$i] };
             my $joint
-                = $familyModifies{ $children[$i] } && $familyModifies{ $children[$i] }{'joint'}
-                ? $jointChildren[ $familyModifies{ $children[$i] }{'joint'} ]
+                = $modify && defined( $modify->{'joint'} ) ? $jointChildren[ $modify->{'joint'} ]
                 : $i == @children - 1 ? $jointChildren[2]
                 :                       $jointChildren[ int( 3 * $i / @children ) ];
             push( @lineJointChildren, $joint . ' -- ' . $children[$i] );
@@ -217,6 +218,12 @@ sub getFamilyModify {
         } split( /[,;]/, trim($modify) )
     };
     return $name;
+}
+
+sub convertCouple {
+    my ($couple) = @_;
+    my @couple = split( /\s+/, trim($couple) );
+    return '{rank=same; ' . join( ' -- ', @couple ) . ' [style=bold]}';
 }
 
 sub hashToAttr {
