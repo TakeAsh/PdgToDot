@@ -48,9 +48,7 @@ Josuke [color="blue", fillcolor="lightblue", label=" Josuke&nbsp;Higashikata| Êù
 
 {rank=same; Josuke -- Jotaro [style=invis]}
 
-f0_c [height="0.01", shape="point", width="0.01"]
-Dario -- f0_c
-f0_c -- Dio
+Dario -- Dio
 
 f1_p [height="0.01", shape="point", width="0.01"]
 f1_c0 [height="0.01", shape="point", width="0.01"]
@@ -63,16 +61,12 @@ f1_c0 -- Dio
 f1_c2 -- Jonathan
 
 f2_p [height="0.01", shape="point", width="0.01"]
-f2_c [height="0.01", shape="point", width="0.01"]
 {rank=same; Jonathan -- f2_p -- Erina [style=bold]}
-f2_p -- f2_c
-f2_c -- GeorgeII
+f2_p -- GeorgeII
 
 f3_p [height="0.01", shape="point", width="0.01"]
-f3_c [height="0.01", shape="point", width="0.01"]
 {rank=same; GeorgeII -- f3_p -- LisaLisa [style=bold]}
-f3_p -- f3_c
-f3_c -- Joseph
+f3_p -- Joseph
 
 f4_p [height="0.01", shape="point", width="0.01"]
 f4_c [height="0.01", shape="point", width="0.01"]
@@ -81,21 +75,15 @@ f4_p -- f4_c
 f4_c -- Josuke
 
 f5_p [height="0.01", shape="point", width="0.01"]
-f5_c [height="0.01", shape="point", width="0.01"]
 {rank=same; Joseph -- f5_p -- SuziQ [style=bold]}
-f5_p -- f5_c
-f5_c -- Holy
+f5_p -- Holy
 
 f6_p [height="0.01", shape="point", width="0.01"]
-f6_c [height="0.01", shape="point", width="0.01"]
 {rank=same; Sadao -- f6_p -- Holy [style=bold]}
-f6_p -- f6_c
-f6_c -- Jotaro
+f6_p -- Jotaro
 
 f7_p [height="0.01", shape="point", width="0.01"]
-f7_c [height="0.01", shape="point", width="0.01"]
 {rank=same; Jotaro -- f7_p -- JotaroWife [style=bold]}
-f7_p -- f7_c
-f7_c -- Jolyne
+f7_p -- Jolyne
 
 }

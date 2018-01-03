@@ -1,5 +1,6 @@
 @startPdg "Joestars"
 
+childrenjoint -
 direction TB
 fontname "Sans"
 
@@ -100,13 +101,13 @@ generation { Josuke Jotaro }
 
 (Dario) - (Dio)
 
-(GeorgeI Mary) - (Dio Jonathan)
+(GeorgeI Mary) - ({joint=+} Dio Jonathan)
 
 (Jonathan Erina) - (GeorgeII)
 
 (GeorgeII LisaLisa) - (Joseph)
 
-(Tomoko Joseph) - (Josuke)
+(Tomoko Joseph) - ({joint=+} Josuke)
 
 (Joseph SuziQ) - (Holy)
 
