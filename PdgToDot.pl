@@ -15,6 +15,7 @@ my $attrJoint = hashToAttr(
         height => 0.01,
     }
 );
+my $keyChildrenOption = '%C';
 
 my $platform       = $^O;                                          # MSWin32 | linux | darwin
 my $charsetConsole = $platform eq 'MSWin32' ? 'CP932' : 'UTF-8';
@@ -31,7 +32,10 @@ if ( !@ARGV ) {
 }
 
 my $ioLayer = $platform eq 'MSWin32' ? "raw:encoding($charsetFile):crlf" : "encoding($charsetFile)";
-my $isDirTopBottom  = 1;
+my %pdgAttr = (
+    IsDirTopBottom => 1,      # Graph Diection 1:TopToBottom 0:LeftToRight
+    ChildrenJoint  => '+',    # '+':insert joint '-':reduce joint
+);
 my %namedAttributes = ();
 my $familyIndex     = -1;
 my %familyModifies  = ();
@@ -71,6 +75,7 @@ sub convertFile {
 
 sub convertBody {
     my $body = shift or return;
+    getGlobalAttribute( \$body, \%pdgAttr, 'ChildrenJoint', qr(^\s*childrenjoint\s+(\-|\+).*$)m );
     my %graphAttr = ( 'charset' => $charsetFile, 'splines' => 'ortho' );
     getGlobalAttribute( \$body, \%graphAttr, 'rankdir', qr(^\s*direction\s+(\S+).*$)m );
     getGlobalAttribute( \$body, \%graphAttr, 'dpi',     qr(^\s*dpi\s+(\S+).*$)m );
@@ -78,7 +83,7 @@ sub convertBody {
     getGlobalAttribute( \$body, \%nodeAttr, 'fontname', qr(^\s*fontname\s+"([^"]+)".*$)m );
     setDefault( \$body, 'node',  \%nodeAttr );
     setDefault( \$body, 'graph', \%graphAttr );
-    $isDirTopBottom = $graphAttr{'rankdir'} eq 'TB' ? 1 : 0;
+    $pdgAttr{IsDirTopBottom} = $graphAttr{'rankdir'} eq 'TB' ? 1 : 0;
     $body =~ s/attribute\s+(%\S+)\s+\{([^\}]+)\}/getNamedAttribute($1, $2)/eg;
     $body =~ s/person\s+(\S+)\s+\{([^\}]+)\}(?:\s+\[([^\]]+)\])?/convertPerson($1, $2, $3)/eg;
     $body =~ s/generation\s*\{([^\}]+)\}/convertGeneration($1)/eg;
@@ -106,14 +111,7 @@ sub setDefault {
 
 sub getNamedAttribute {
     my ( $name, $attributes ) = @_;
-    $namedAttributes{$name} = {
-        map {
-            $_ = trim($_);
-            my ( $key, $value ) = split( /\s*=\s*/, $_ );
-            $value =~ s/^"(.*)"$/$1/;
-            $key => $value;
-        } split( /[,;]/, trim($attributes) )
-    };
+    $namedAttributes{$name} = attrToHash($attributes);
     return '';
 }
 
@@ -126,7 +124,7 @@ sub convertPerson {
         push( @attrLabels, join( '\\l', @commnet ) . '\\l' );
     }
     my $attLabel
-        = $isDirTopBottom
+        = $pdgAttr{IsDirTopBottom}
         ? '{' . join( '| ', @attrLabels ) . '}'
         : join( '| ', @attrLabels );
     my %attributes = ();
@@ -155,7 +153,9 @@ sub convertFamily {
     ++$familyIndex;
     my @family = ();
     %familyModifies = ();
+    $children       = $keyChildrenOption . $children;
     $children =~ s/(\S+)\s*\{([^\}]+)\}/getFamilyModify($1, $2)/eg;
+    $children = substr( $children, length($keyChildrenOption) );
     my @parents  = split( /\s+/, trim($parents) );
     my @children = split( /\s+/, trim($children) );
     my @joints   = ();
@@ -174,23 +174,36 @@ sub convertFamily {
         @parents = ( $p0, $jointParents, @parents );
         $rankParents = '{rank=same; ' . join( ' -- ', @parents ) . ' [style=bold]}';
     }
+    my $childrenJoint = $familyModifies{$keyChildrenOption}{'joint'} || $pdgAttr{ChildrenJoint};
     if ( @children < 2 ) {
-        my $jointChild = 'f' . $familyIndex . '_c';
-        push( @joints,            $jointChild . ' ' . $attrJoint );
-        push( @parentChildren,    $jointChild );
-        push( @lineJointChildren, $jointChild . ' -- ' . $children[0] );
+        if ( $childrenJoint eq '-' ) {
+            push( @parentChildren, $children[0] );
+        } else {
+            my $jointChild = 'f' . $familyIndex . '_c';
+            push( @joints,            $jointChild . ' ' . $attrJoint );
+            push( @parentChildren,    $jointChild );
+            push( @lineJointChildren, $jointChild . ' -- ' . $children[0] );
+        }
     } else {
-        my @jointChildren = map { 'f' . $familyIndex . '_c' . $_; } ( 0 .. 2 );
-        map { push( @joints, $_ . ' ' . $attrJoint ); } @jointChildren;
-        $rankJoints = '{rank=same; ' . join( ' -- ', @jointChildren ) . '}';
-        push( @parentChildren, $jointChildren[1] );
-        for ( my $i = 0; $i < @children; ++$i ) {
-            my $modify = $familyModifies{ $children[$i] };
-            my $joint
-                = $modify && defined( $modify->{'joint'} ) ? $jointChildren[ $modify->{'joint'} ]
-                : $i == @children - 1 ? $jointChildren[2]
-                :                       $jointChildren[ int( 3 * $i / @children ) ];
-            push( @lineJointChildren, $joint . ' -- ' . $children[$i] );
+        if ( $childrenJoint eq '-' ) {
+            my $jointChildren = 'f' . $familyIndex . '_c';
+            push( @joints,         $jointChildren . ' ' . $attrJoint );
+            push( @parentChildren, $jointChildren );
+            map { push( @lineJointChildren, $jointChildren . ' -- ' . $_ ); } @children;
+        } else {
+            my @jointChildren = map { 'f' . $familyIndex . '_c' . $_; } ( 0 .. 2 );
+            map { push( @joints, $_ . ' ' . $attrJoint ); } @jointChildren;
+            $rankJoints = '{rank=same; ' . join( ' -- ', @jointChildren ) . '}';
+            push( @parentChildren, $jointChildren[1] );
+            for ( my $i = 0; $i < @children; ++$i ) {
+                my $modify = $familyModifies{ $children[$i] };
+                my $joint
+                    = $modify
+                    && defined( $modify->{'joint'} ) ? $jointChildren[ $modify->{'joint'} ]
+                    : $i == @children - 1            ? $jointChildren[2]
+                    :                                  $jointChildren[ int( 3 * $i / @children ) ];
+                push( @lineJointChildren, $joint . ' -- ' . $children[$i] );
+            }
         }
     }
     push( @family, @joints );
@@ -209,14 +222,7 @@ sub convertFamily {
 
 sub getFamilyModify {
     my ( $name, $modify ) = @_;
-    $familyModifies{$name} = {
-        map {
-            $_ = trim($_);
-            my ( $key, $value ) = split( /\s*=\s*/, $_ );
-            $value =~ s/^"(.*)"$/$1/;
-            $key => $value;
-        } split( /[,;]/, trim($modify) )
-    };
+    $familyModifies{$name} = attrToHash($modify);
     return $name;
 }
 
@@ -224,6 +230,18 @@ sub convertCouple {
     my ($couple) = @_;
     my @couple = split( /\s+/, trim($couple) );
     return '{rank=same; ' . join( ' -- ', @couple ) . ' [style=bold]}';
+}
+
+sub attrToHash {
+    my $text = shift or return;
+    return {
+        map {
+            $_ = trim($_);
+            my ( $key, $value ) = split( /\s*=\s*/, $_ );
+            $value =~ s/^"(.*)"$/$1/;
+            $key => $value;
+        } split( /[,;]/, trim($text) )
+    };
 }
 
 sub hashToAttr {
