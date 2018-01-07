@@ -24,6 +24,10 @@ cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 ![Samples/Simpsons](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons.png)
 - Simpsons, Left to Right
 ![Samples/Simpsons_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Simpsons_LR.png)
+- Joestars, Top to Bottom
+![Samples/Joestars](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Joestars.png)
+- Joestars, Left to Right
+![Samples/Joestars_LR](https://github.com/TakeAsh/PdgToDot/raw/master/Samples/Joestars_LR.png)
 
 ## Pedigree format
 
@@ -36,10 +40,14 @@ cat Samples/Isono.pdg | ./PdgToDot.pl - | dot -Tsvg -o Samples/Isono.svg
 
 ### Diagram attribute
 ```
+childrenjoint <+|->
 direction <TB|LR>
 dpi <number>
 fontname "<name>"
 ```
+- `childrenjoint` specifies how to connect the parents and the children by default.  
+When the child is only one, `+` specifies connecting the parents and the child with a joint. `-` specifies connecting the parents and the child directly.  
+When the children are 2 or more, `+` specifies connecting the parents and the children with 3 joints. `-` specifies connecting the parents and the children with 1 joint.
 - `direction` specifies the diagram direction. `direction` takes the option `TB` (Top to Bottom) or `LR` (Left to Right).
 - `dpi` specifies the output resolution.
 - `fontname` specifies the font face of the person. The double quotations are required.
@@ -74,12 +82,13 @@ generation { <person> <person> [<person>...] }
 
 ### Family
 ```
-( <person> [<person>] ) - ( <person> [{<modify>}] [<person>...] )
+( <person> [<person>] ) - ( [{<modify>}] <person> [{<modify>}] [<person>...] )
 ```
 - The first block in the parenthesis indicates the parents.
 - The second block in the parenthesis indicates the children.
 - `modify` specifies the modification of the dot output.
-    - `joint` specifies the joint connected to the child. The value is 0, 1, or 2.
+    - `joint` at the top of children specifies the connection the parents and the children.
+    - `joint` after a child specifies the joint connected to the child. The value is 0, 1, or 2.
 
 ### End
 ```
