@@ -3,6 +3,8 @@
 - [Graphviz - Graph Visualization Software](http://www.graphviz.org/)
 - [Family tree layout with Dot/GraphViz - Stack Overflow](https://stackoverflow.com/questions/2271704/)
 - [dot - In Graphviz, how do I align an edge to the top center of a node? - Stack Overflow](https://stackoverflow.com/questions/27504703/)
+- [rstacruz/kingraph: Plots family trees using JavaScript and Graphviz](https://github.com/rstacruz/kingraph)
+- [hidekishima/family-tree: Tool for drawing a family tree](https://github.com/hidekishima/family-tree)
 
 ## Usage
 Make .pdg file, convert it to .dot, and convert it to .svg/.png.
