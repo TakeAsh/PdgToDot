@@ -1,0 +1,19 @@
+@startPdg "{{{PdgTitle}}}"
+
+direction TB
+fontname "Sans"
+{{{Options}}}
+
+// Attributes
+{{{Attributes}}}
+
+// Persons
+{{{Persons}}}
+
+// Generations
+{{{Generations}}}
+
+// Families
+{{{Families}}}
+
+@endPdg

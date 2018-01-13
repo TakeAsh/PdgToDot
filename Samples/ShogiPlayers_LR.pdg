@@ -1,0 +1,534 @@
+@startPdg "ShogiPlayers"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_1 {金易二郎} [%male]
+person pro_2 {木村義雄} [%male]
+person pro_3 {金子金五郎} [%male]
+person pro_4 {渡辺東一} [%male]
+person pro_5 {萩原淳} [%male]
+person pro_6 {中井捨吉} [%male]
+person pro_7 {大野源一} [%male]
+person pro_8 {志沢春吉} [%male]
+person pro_9 {市川一郎} [%male]
+person pro_10 {坂口允彦} [%male]
+person pro_11 {塚田正夫} [%male]
+person pro_12 {梶一郎} [%male]
+person pro_13 {角田三男} [%male]
+person pro_14 {加藤治郎} [%male]
+person pro_15 {松下力} [%male]
+person pro_16 {奥野基芳} [%male]
+person pro_17 {小堀清一} [%male]
+person pro_18 {升田幸三} [%male]
+person pro_19 {高島一岐代} [%male]
+person pro_20 {荒巻三之} [%male]
+person pro_21 {永沢勝雄} [%male]
+person pro_22 {加藤恵三} [%male]
+person pro_23 {岡崎史明} [%male]
+person pro_24 {北楯修哉} [%male]
+person pro_25 {松田茂役} [%male]
+person pro_26 {大山康晴} [%male]
+person pro_27 {山本武雄} [%male]
+person pro_28 {山中和正} [%male]
+person pro_29 {板谷四郎} [%male]
+person pro_30 {本間爽悦} [%male]
+person pro_31 {高柳敏夫} [%male]
+person pro_32 {広津久雄} [%male]
+person pro_33 {吉田六彦} [%male]
+person pro_34 {富沢幹雄} [%male]
+person pro_35 {原田泰夫} [%male]
+person pro_36 {星田啓三} [%male]
+person pro_37 {南口繁一} [%male]
+person pro_38 {北村秀治郎} [%male]
+person pro_39 {花村元司} [%male]
+person pro_40 {山川次彦} [%male]
+person pro_41 {佐瀬勇次} [%male]
+person pro_42 {加藤博二} [%male]
+person pro_43 {丸田祐三} [%male]
+person pro_44 {灘蓮照} [%male]
+person pro_45 {平野広吉} [%male]
+person pro_46 {五十嵐豊一} [%male]
+person pro_47 {清野静男} [%male]
+person pro_48 {佐藤豊} [%male]
+person pro_49 {木川貴一} [%male]
+person pro_50 {下平幸男} [%male]
+person pro_51 {二見敬三} [%male]
+person pro_52 {西本馨} [%male]
+person pro_53 {神田鎮雄} [%male]
+person pro_54 {熊谷達人} [%male]
+person pro_55 {増田敏二} [%male]
+person pro_56 {浅沼一} [%male]
+person pro_57 {二上達也} [%male]
+person pro_58 {橋本三治} [%male]
+person pro_59 {津村常吉} [%male]
+person pro_60 {北村昌男} [%male]
+person pro_61 {関根茂} [%male]
+person pro_62 {大友昇} [%male]
+person pro_63 {佐藤庄平} [%male]
+person pro_64 {加藤一二三} [%male]
+person pro_65 {宮坂幸雄} [%male]
+person pro_66 {有吉道夫} [%male]
+person pro_67 {長谷部久雄} [%male]
+person pro_68 {芹沢博文} [%male]
+person pro_69 {関屋喜代作} [%male]
+person pro_70 {賀集正三} [%male]
+person pro_71 {大村和久} [%male]
+person pro_72 {大原英二} [%male]
+person pro_73 {剱持松二} [%male]
+person pro_74 {佐藤大五郎} [%male]
+person pro_75 {吉田利勝} [%male]
+person pro_76 {北村文男} [%male]
+person pro_77 {内藤國雄} [%male]
+person pro_78 {伊達康夫} [%male]
+person pro_79 {佐伯昌優} [%male]
+person pro_80 {木村嘉孝} [%male]
+person pro_81 {山口千嶺} [%male]
+person pro_82 {木村義徳} [%male]
+person pro_83 {高島弘光} [%male]
+person pro_84 {板谷進} [%male]
+person pro_85 {米長邦雄} [%male]
+person pro_86 {大内延介} [%male]
+person pro_87 {西村一義} [%male]
+person pro_88 {木下晃} [%male]
+person pro_89 {山口英夫} [%male]
+person pro_90 {桜井昇} [%male]
+person pro_91 {田辺一郎} [%male]
+person pro_92 {中原誠} [%male]
+person pro_93 {桐山清澄} [%male]
+person pro_94 {高田丈資} [%male]
+person pro_95 {河口俊彦} [%male]
+person pro_96 {勝浦修} [%male]
+person pro_97 {石田和雄} [%male]
+person pro_98 {若松政和} [%male]
+person pro_99 {森安秀光} [%male]
+person pro_100 {森けい二} [%male]
+person pro_101 {滝誠一郎} [%male]
+person pro_102 {池田修一} [%male]
+person pro_103 {野本虎次} [%male]
+person pro_104 {田中魁秀} [%male]
+person pro_105 {坪内利幸} [%male]
+person pro_106 {佐藤義則} [%male]
+person pro_107 {安恵照剛} [%male]
+person pro_108 {森安正幸} [%male]
+person pro_109 {田丸昇} [%male]
+person pro_110 {宮田利男} [%male]
+person pro_111 {真部一男} [%male]
+person pro_112 {小阪昇} [%male]
+person pro_113 {淡路仁茂} [%male]
+person pro_114 {青野照市} [%male]
+person pro_115 {椎橋金司} [%male]
+person pro_116 {前田祐司} [%male]
+person pro_117 {飯野健二} [%male]
+person pro_118 {伊藤果} [%male]
+person pro_119 {菊地常夫} [%male]
+person pro_120 {桐谷広人} [%male]
+person pro_121 {沼春雄} [%male]
+person pro_122 {有野芳人} [%male]
+person pro_123 {小林健二} [%male]
+person pro_124 {土佐浩司} [%male]
+person pro_125 {酒井順吉} [%male]
+person pro_126 {森信雄} [%male]
+person pro_127 {田中寅彦} [%male]
+person pro_128 {東和男} [%male]
+person pro_129 {中田章道} [%male]
+person pro_130 {大島映二} [%male]
+person pro_131 {谷川浩司} [%male]
+person pro_132 {松浦隆一} [%male]
+person pro_133 {青木清} [%male]
+person pro_134 {小野修一} [%male]
+person pro_135 {福崎文吾} [%male]
+person pro_136 {鈴木輝彦} [%male]
+person pro_137 {武者野勝巳} [%male]
+person pro_138 {脇謙二} [%male]
+person pro_140 {瀬戸博晴} [%male]
+person pro_141 {児玉孝一} [%male]
+person pro_142 {高橋道雄} [%male]
+person pro_143 {中村修} [%male]
+person pro_144 {泉正樹} [%male]
+person pro_145 {依田有司} [%male]
+person pro_146 {島朗} [%male]
+person pro_147 {南芳一} [%male]
+person pro_148 {塚田泰明} [%male]
+person pro_149 {神谷広志} [%male]
+person pro_150 {植山悦行} [%male]
+person pro_151 {西川慶二} [%male]
+person pro_152 {武市三郎} [%male]
+person pro_153 {室岡克彦} [%male]
+person pro_154 {堀口弘治} [%male]
+person pro_155 {大野八一雄} [%male]
+person pro_156 {加瀬純一} [%male]
+person pro_157 {井上慶太} [%male]
+person pro_158 {有森浩三} [%male]
+person pro_159 {飯田弘之} [%male]
+person pro_160 {神吉宏充} [%male]
+person pro_161 {森下卓} [%male]
+person pro_162 {浦野真彦} [%male]
+person pro_163 {小野敦生} [%male]
+person pro_164 {日浦市郎} [%male]
+person pro_165 {達正光} [%male]
+person pro_166 {伊藤博文} [%male]
+person pro_167 {小林宏} [%male]
+person pro_168 {富岡英作} [%male]
+person pro_169 {関浩} [%male]
+person pro_170 {本間博} [%male]
+person pro_171 {阿部隆} [%male]
+person pro_172 {所司和晴} [%male]
+person pro_173 {中田宏樹} [%male]
+person pro_174 {安西勝一} [%male]
+person pro_175 {羽生善治} [%male]
+person pro_176 {中田功} [%male]
+person pro_177 {石川陽生} [%male]
+person pro_178 {長沼洋} [%male]
+person pro_179 {神崎健二} [%male]
+person pro_180 {村山聖} [%male]
+person pro_181 {櫛田陽一} [%male]
+person pro_182 {佐藤康光} [%male]
+person pro_183 {森内俊之} [%male]
+person pro_184 {中川大輔} [%male]
+person pro_185 {先崎学} [%male]
+person pro_186 {野田敬三} [%male]
+person pro_187 {木下浩一} [%male]
+person pro_188 {小倉久史} [%male]
+person pro_189 {屋敷伸之} [%male]
+person pro_190 {藤原直哉} [%male]
+person pro_191 {高田尚平} [%male]
+person pro_192 {畠山鎮} [%male]
+person pro_193 {畠山成幸} [%male]
+person pro_194 {丸山忠久} [%male]
+person pro_195 {郷田真隆} [%male]
+person pro_196 {佐藤秀司} [%male]
+person pro_197 {杉本昌隆} [%male]
+person pro_198 {藤井猛} [%male]
+person pro_199 {平藤眞吾} [%male]
+person pro_200 {豊川孝弘} [%male]
+person pro_201 {深浦康市} [%male]
+person pro_202 {真田圭一} [%male]
+person pro_203 {飯塚祐紀} [%male]
+person pro_204 {三浦弘行} [%male]
+person pro_205 {伊藤能} [%male]
+person pro_206 {川上猛} [%male]
+person pro_207 {久保利明} [%male]
+person pro_208 {行方尚史} [%male]
+person pro_209 {岡崎洋} [%male]
+person pro_210 {窪田義行} [%male]
+person pro_211 {北浜健介} [%male]
+person pro_212 {矢倉規広} [%male]
+person pro_213 {鈴木大介} [%male]
+person pro_214 {北島忠雄} [%male]
+person pro_215 {勝又清和} [%male]
+person pro_216 {松本佳介} [%male]
+person pro_217 {田村康介} [%male]
+person pro_218 {堀口一史座} [%male]
+person pro_219 {中座真} [%male]
+person pro_220 {近藤正和} [%male]
+person pro_221 {野月浩貴} [%male]
+person pro_222 {木村一基} [%male]
+person pro_223 {小林裕士} [%male]
+person pro_224 {佐藤紳哉} [%male]
+person pro_225 {増田裕司} [%male]
+person pro_226 {高野秀行} [%male]
+person pro_227 {山崎隆之} [%male]
+person pro_228 {伊奈祐介} [%male]
+person pro_229 {山本真也} [%male]
+person pro_230 {中尾敏之} [%male]
+person pro_231 {松尾歩} [%male]
+person pro_232 {金沢孝史} [%male]
+person pro_233 {阿久津主税} [%male]
+person pro_234 {安用寺孝功} [%male]
+person pro_235 {渡辺明} [%male]
+person pro_236 {飯島栄治} [%male]
+person pro_237 {千葉幸生} [%male]
+person pro_238 {上野裕和} [%male]
+person pro_239 {橋本崇載} [%male]
+person pro_240 {佐々木慎} [%male]
+person pro_241 {宮田敦史} [%male]
+person pro_242 {村田智弘} [%male]
+person pro_243 {大平武洋} [%male]
+person pro_244 {熊坂学} [%male]
+person pro_245 {藤倉勇樹} [%male]
+person pro_246 {横山泰明} [%male]
+person pro_247 {島本亮} [%male]
+person pro_248 {西尾明} [%male]
+person pro_249 {村山慈明} [%male]
+person pro_250 {佐藤和俊} [%male]
+person pro_251 {片上大輔} [%male]
+person pro_252 {中村亮介} [%male]
+person pro_253 {村中秀史} [%male]
+person pro_254 {阪口悟} [%male]
+person pro_255 {広瀬章人} [%male]
+person pro_256 {長岡裕也} [%male]
+person pro_257 {高崎一生} [%male]
+person pro_258 {遠山雄亮} [%male]
+person pro_259 {瀬川晶司} [%male]
+person pro_260 {糸谷哲郎} [%male]
+person pro_261 {中村太地} [%male]
+person pro_262 {戸辺誠} [%male]
+person pro_263 {佐藤天彦} [%male]
+person pro_264 {豊島将之} [%male]
+person pro_265 {金井恒太} [%male]
+person pro_266 {伊藤真吾} [%male]
+person pro_267 {村田顕弘} [%male]
+person pro_268 {及川拓馬} [%male]
+person pro_269 {稲葉陽} [%male]
+person pro_270 {田中悠一} [%male]
+person pro_271 {佐藤慎一} [%male]
+person pro_272 {西川和宏} [%male]
+person pro_273 {渡辺正和} [%male]
+person pro_274 {澤田真吾} [%male]
+person pro_275 {大石直嗣} [%male]
+person pro_276 {永瀬拓矢} [%male]
+person pro_277 {阿部健治郎} [%male]
+person pro_278 {菅井竜也} [%male]
+person pro_279 {牧野光則} [%male]
+person pro_280 {佐々木勇気} [%male]
+person pro_281 {船江恒平} [%male]
+person pro_282 {門倉啓太} [%male]
+person pro_283 {阿部光瑠} [%male]
+person pro_284 {高見泰地} [%male]
+person pro_285 {藤森哲也} [%male]
+person pro_286 {斎藤慎太郎} [%male]
+person pro_287 {八代弥} [%male]
+person pro_288 {上村亘} [%male]
+person pro_289 {石田直裕} [%male]
+person pro_290 {渡辺大夢} [%male]
+person pro_291 {千田翔太} [%male]
+person pro_292 {竹内雄悟} [%male]
+person pro_293 {石井健太郎} [%male]
+person pro_294 {三枚堂達也} [%male]
+person pro_295 {星野良生} [%male]
+person pro_296 {宮本広志} [%male]
+person pro_297 {増田康宏} [%male]
+person pro_298 {黒沢怜生} [%male]
+person pro_299 {今泉健司} [%male]
+person pro_300 {青嶋未来} [%male]
+person pro_301 {梶浦宏孝} [%male]
+person pro_302 {高野智史} [%male]
+person pro_303 {近藤誠也} [%male]
+person pro_304 {都成竜馬} [%male]
+person pro_305 {井出隼平} [%male]
+person pro_306 {佐々木大地} [%male]
+person pro_307 {藤井聡太} [%male]
+person pro_308 {大橋貴洸} [%male]
+person pro_309 {西田拓也} [%male]
+person pro_310 {杉本和陽} [%male]
+person pro_311 {斎藤明日斗} [%male]
+person pro_312 {古森悠太} [%male]
+person lady_1 {関根紀代子} [%female]
+person lady_2 {谷川治恵} [%female]
+person lady_3 {森安多恵子} [%female]
+person lady_5 {長沢千和子} [%female]
+person lady_6 {山田久美} [%female]
+person lady_7 {清水市代} [%female]
+person lady_8 {高群佐知子} [%female]
+person lady_9 {斎田晴子} [%female]
+person lady_10 {石高澄恵} [%female]
+person lady_11 {植村真理} [%female]
+person lady_12 {真田彩子} [%female]
+person lady_13 {高橋和} [%female]
+person lady_14 {本田小百合} [%female]
+person lady_15 {久津知子} [%female]
+person lady_16 {矢内理絵子} [%female]
+person lady_17 {千葉涼子} [%female]
+person lady_18 {伊藤明日香} [%female]
+person lady_19 {竹部さゆり} [%female]
+person lady_20 {早水千紗} [%female]
+person lady_21 {甲斐智美} [%female]
+person lady_22 {安食総子} [%female]
+person lady_23 {藤田綾} [%female]
+person lady_24 {野田澤彩乃} [%female]
+person lady_25 {山田朱未} [%female]
+person lady_26 {上田初美} [%female]
+person lady_27 {坂東香菜子} [%female]
+person lady_28 {村田智穂} [%female]
+person lady_29 {鈴木環那} [%female]
+person lady_30 {中村真梨花} [%female]
+person lady_31 {貞升南} [%female]
+person lady_32 {岩根忍} [%female]
+person lady_33 {里見香奈} [%female]
+person lady_34 {井道千尋} [%female]
+person lady_35 {室田伊緒} [%female]
+person lady_36 {伊奈川愛菓} [%female]
+person lady_37 {宮宗紫野} [%female]
+person lady_38 {中村桃子} [%female]
+person lady_39 {山口恵梨子} [%female]
+person lady_40 {香川愛生} [%female]
+person lady_41 {渡辺弥生} [%female]
+person lady_42 {室谷由紀} [%female]
+person lady_43 {北尾まどか} [%female]
+person lady_44 {長谷川優貴} [%female]
+person lady_45 {竹俣紅} [%female]
+person lady_46 {北村桂香} [%female]
+person lady_47 {相川春香} [%female]
+person lady_48 {飯野愛} [%female]
+person lady_49 {山根ことみ} [%female]
+person lady_50 {和田あき} [%female]
+person lady_51 {塚田恵梨花} [%female]
+person lady_52 {伊藤沙恵} [%female]
+person lady_53 {中澤沙耶} [%female]
+person lady_54 {高浜愛子} [%female]
+person lady_55 {山口絵美菜} [%female]
+person lady_56 {里見咲紀} [%female]
+person lady_57 {石本さくら} [%female]
+person lady_58 {頼本奈菜} [%female]
+person lady_59 {Ｋ・ステチェンスカ} [%female]
+person lady_6002 {武富礼衣} [%female]
+person lady_6003 {藤井奈々} [%female]
+person lady_6004 {小高佐季子} [%female]
+person extra_1 {関根金次郎} [%male]
+person extra_2 {土居市太郎} [%male]
+person extra_3 {木見金治郎} [%male]
+person extra_4 {大崎熊雄} [%male]
+person extra_5 {花田長太郎} [%male]
+person extra_6 {山本樟郎} [%male]
+person extra_7 {小泉雅信} [%male]
+person extra_8 {藤内金吾} [%male]
+person extra_9 {飯塚勘一郎} [%male]
+person extra_10 {石井秀吉} [%male]
+person extra_11 {神田辰之助} [%male]
+person extra_12 {阪田三吉} [%male]
+person extra_13 {村上真一} [%male]
+person extra_14 {平野信助} [%male]
+person extra_15 {斉藤銀次郎} [%male]
+person extra_16 {宮松関三郎} [%male]
+person extra_17 {野村慶虎} [%male]
+person extra_18 {大和久彪} [%male]
+person extra_19 {廣津久雄} [%male]
+person extra_20 {建部和歌夫} [%male]
+
+// Generations
+
+
+// Families
+(pro_1) - (pro_27 pro_31)
+(pro_2) - (pro_24 pro_29 pro_39 pro_47 pro_80)
+(pro_3) - (pro_17 pro_25 pro_40)
+(pro_4) - (pro_50 pro_57 pro_60 pro_74 pro_96)
+(pro_6) - (pro_30 pro_162)
+(pro_10) - (pro_79)
+(pro_11) - (pro_65)
+(pro_13) - (pro_70)
+(pro_14) - (pro_35 pro_49 pro_82 pro_111)
+(pro_15) - (pro_91 pro_115 pro_203)
+(pro_17) - (pro_59 pro_95)
+(pro_18) - (pro_120)
+(pro_19) - (pro_83 pro_128 pro_138 lady_3)
+(pro_20) - (pro_73 pro_94 pro_191)
+(pro_23) - (pro_55 pro_78 pro_141)
+(pro_25) - (pro_156 pro_187 pro_202 lady_5)
+(pro_26) - (pro_66 pro_176 pro_208)
+(pro_29) - (pro_71 pro_76 pro_84 pro_97 pro_129)
+(pro_30) - (pro_104 pro_145)
+(pro_31) - (pro_68 pro_92 pro_107 pro_110 pro_118 pro_127 pro_130 pro_146 pro_165 pro_253 lady_7 lady_20)
+(pro_35) - (pro_63 pro_89 pro_90 pro_220 lady_29)
+(pro_37) - (pro_101 pro_126)
+(pro_39) - (pro_75 pro_102 pro_103 pro_137 pro_161 pro_201 pro_210)
+(pro_40) - (pro_61 pro_169)
+(pro_41) - (pro_85 pro_87 pro_109 pro_121 pro_142 pro_150 pro_153 pro_174 pro_194 pro_219 pro_222 lady_2 lady_12 lady_14)
+(pro_42) - (pro_154)
+(pro_43) - (pro_132 pro_152)
+(pro_44) - (pro_53 pro_179)
+(pro_45) - (pro_172 pro_206 pro_209)
+(pro_46) - (pro_189)
+(pro_47) - (pro_124)
+(pro_50) - (pro_122)
+(pro_54) - (pro_133)
+(pro_55) - (pro_93)
+(pro_57) - (pro_140 pro_175)
+(pro_61) - (pro_117 pro_144 pro_214 pro_237 pro_240 pro_270 lady_16)
+(pro_62) - (pro_100 pro_195)
+(pro_66) - (pro_105 pro_158 lady_25)
+(pro_68) - (pro_106)
+(pro_69) - (pro_200)
+(pro_70) - (pro_116 pro_151 pro_199)
+(pro_73) - (pro_64 pro_216 pro_239 pro_271)
+(pro_76) - (pro_229)
+(pro_77) - (pro_160 pro_294)
+(pro_78) - (pro_166)
+(pro_79) - (pro_143 pro_211 lady_9 lady_13 lady_30)
+(pro_82) - (lady_34)
+(pro_84) - (pro_123 pro_197)
+(pro_85) - (pro_184 pro_185 pro_205 pro_256 pro_257 pro_261 pro_310)
+(pro_86) - (pro_148 pro_159 pro_168 pro_213 pro_217)
+(pro_87) - (pro_198 pro_204 pro_277 pro_295 lady_6 lady_23 lady_43)
+(pro_88) - (pro_147 pro_254 pro_279)
+(pro_90) - (pro_173 pro_236 pro_245 pro_246 pro_249 pro_266 lady_17)
+(pro_92) - (pro_188 pro_196 pro_226 pro_244 lady_21)
+(pro_93) - (pro_212 pro_264)
+(pro_94) - (pro_177)
+(pro_96) - (pro_183 pro_221 pro_232 pro_255 lady_15)
+(pro_97) - (pro_215 pro_280 pro_282 pro_284 pro_290)
+(pro_98) - (pro_131 pro_157 pro_190)
+(pro_99) - (pro_170 pro_186)
+(pro_100) - (lady_33 lady_56)
+(pro_101) - (pro_233 lady_8)
+(pro_104) - (pro_135 pro_171 pro_178 pro_182 pro_223)
+(pro_107) - (pro_163 pro_164 pro_224 pro_238 pro_259 pro_276 pro_300 lady_47)
+(pro_108) - (pro_192 pro_193 pro_296)
+(pro_109) - (pro_181 pro_305 lady_6004)
+(pro_110) - (pro_311)
+(pro_111) - (pro_167)
+(pro_113) - (pro_207 pro_242 lady_28)
+(pro_114) - (pro_248 pro_287 lady_22)
+(pro_115) - (pro_155)
+(pro_117) - (pro_265 lady_27 lady_48)
+(pro_118) - (pro_218 pro_268 lady_18 lady_19 lady_24 lady_26)
+(pro_120) - (pro_243 pro_299)
+(pro_123) - (pro_228 pro_247 pro_312 lady_32 lady_46)
+(pro_126) - (pro_180 pro_225 pro_227 pro_234 pro_251 pro_260 pro_274 pro_275 pro_291 pro_292 pro_309 lady_42 lady_55 lady_57)
+(pro_129) - (pro_267)
+(pro_131) - (pro_304)
+(pro_137) - (lady_10)
+(pro_142) - (pro_252 pro_298 lady_37 lady_38)
+(pro_143) - (pro_283 pro_288 lady_40)
+(pro_148) - (pro_285 lady_51)
+(pro_151) - (pro_272)
+(pro_154) - (lady_31 lady_39)
+(pro_156) - (pro_250 pro_258 pro_262)
+(pro_157) - (pro_269 pro_278 pro_281)
+(pro_160) - (pro_273)
+(pro_161) - (pro_297)
+(pro_166) - (lady_6003)
+(pro_172) - (pro_231 pro_235 pro_241 pro_289 pro_293 pro_303 pro_308 lady_36 lady_41)
+(pro_176) - (pro_263 lady_6002)
+(pro_183) - (lady_45)
+(pro_186) - (lady_44 lady_49)
+(pro_189) - (lady_52)
+(pro_192) - (pro_286)
+(pro_197) - (pro_307 lady_35 lady_53)
+(pro_201) - (pro_306)
+(pro_203) - (lady_58)
+(pro_213) - (pro_301)
+(pro_222) - (pro_302)
+(pro_229) - (lady_54)
+(pro_245) - (lady_50)
+(pro_251) - (lady_59)
+(extra_1) - (pro_1 pro_2 pro_4 pro_46)
+(extra_2) - (pro_3 pro_5 pro_12 pro_15 pro_33 pro_42 pro_69 pro_86)
+(extra_3) - (pro_6 pro_7 pro_13 pro_18 pro_26 pro_28 pro_51 pro_52 pro_58)
+(extra_4) - (pro_8 pro_9)
+(extra_5) - (pro_10 pro_11 pro_20 pro_32)
+(extra_6) - (pro_14 pro_34)
+(extra_7) - (pro_16 pro_56)
+(extra_8) - (pro_19 pro_77 pro_98 pro_99 pro_108 pro_112 pro_113 pro_125)
+(extra_9) - (pro_21 pro_62 pro_81)
+(extra_10) - (pro_22 pro_41)
+(extra_11) - (pro_23 pro_38 pro_44)
+(extra_12) - (pro_36)
+(extra_13) - (pro_37 pro_88)
+(extra_14) - (pro_43)
+(extra_15) - (pro_45)
+(extra_16) - (pro_48)
+(extra_17) - (pro_54 pro_72)
+(extra_18) - (pro_67)
+(extra_19) - (pro_114 pro_119 pro_136 pro_149 pro_230)
+(extra_20) - (pro_134)
+
+@endPdg
