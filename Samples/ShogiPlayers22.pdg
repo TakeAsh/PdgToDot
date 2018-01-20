@@ -1,0 +1,21 @@
+@startPdg "ShogiPlayers22"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person lady_11 {植村真理} [%female]
+
+// Generations
+
+
+// Families
+
+
+@endPdg

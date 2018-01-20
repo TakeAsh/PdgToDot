@@ -1,0 +1,48 @@
+@startPdg "ShogiPlayers6"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_14 {加藤治郎} [%male]
+person pro_34 {富沢幹雄} [%male]
+person pro_35 {原田泰夫} [%male]
+person pro_49 {木川貴一} [%male]
+person pro_63 {佐藤庄平} [%male]
+person pro_82 {木村義徳} [%male]
+person pro_89 {山口英夫} [%male]
+person pro_90 {桜井昇} [%male]
+person pro_111 {真部一男} [%male]
+person pro_167 {小林宏} [%male]
+person pro_173 {中田宏樹} [%male]
+person pro_220 {近藤正和} [%male]
+person pro_236 {飯島栄治} [%male]
+person pro_245 {藤倉勇樹} [%male]
+person pro_246 {横山泰明} [%male]
+person pro_249 {村山慈明} [%male]
+person pro_266 {伊藤真吾} [%male]
+person lady_17 {千葉涼子} [%female]
+person lady_29 {鈴木環那} [%female]
+person lady_34 {井道千尋} [%female]
+person lady_50 {和田あき} [%female]
+person extra_6 {山本樟郎} [%male]
+
+// Generations
+
+
+// Families
+(pro_14) - (pro_35 pro_49 pro_82 pro_111)
+(pro_35) - (pro_63 pro_89 pro_90 pro_220 lady_29)
+(pro_82) - (lady_34)
+(pro_90) - (pro_173 pro_236 pro_245 pro_246 pro_249 pro_266 lady_17)
+(pro_111) - (pro_167)
+(pro_245) - (lady_50)
+(extra_6) - (pro_14 pro_34)
+
+@endPdg

@@ -1,0 +1,65 @@
+@startPdg "ShogiPlayers10"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_22 {加藤恵三} [%male]
+person pro_41 {佐瀬勇次} [%male]
+person pro_85 {米長邦雄} [%male]
+person pro_87 {西村一義} [%male]
+person pro_109 {田丸昇} [%male]
+person pro_121 {沼春雄} [%male]
+person pro_142 {高橋道雄} [%male]
+person pro_150 {植山悦行} [%male]
+person pro_153 {室岡克彦} [%male]
+person pro_174 {安西勝一} [%male]
+person pro_181 {櫛田陽一} [%male]
+person pro_184 {中川大輔} [%male]
+person pro_185 {先崎学} [%male]
+person pro_194 {丸山忠久} [%male]
+person pro_198 {藤井猛} [%male]
+person pro_204 {三浦弘行} [%male]
+person pro_205 {伊藤能} [%male]
+person pro_219 {中座真} [%male]
+person pro_222 {木村一基} [%male]
+person pro_252 {中村亮介} [%male]
+person pro_256 {長岡裕也} [%male]
+person pro_257 {高崎一生} [%male]
+person pro_261 {中村太地} [%male]
+person pro_277 {阿部健治郎} [%male]
+person pro_295 {星野良生} [%male]
+person pro_298 {黒沢怜生} [%male]
+person pro_302 {高野智史} [%male]
+person pro_305 {井出隼平} [%male]
+person pro_310 {杉本和陽} [%male]
+person lady_2 {谷川治恵} [%female]
+person lady_6 {山田久美} [%female]
+person lady_12 {真田彩子} [%female]
+person lady_14 {本田小百合} [%female]
+person lady_23 {藤田綾} [%female]
+person lady_37 {宮宗紫野} [%female]
+person lady_38 {中村桃子} [%female]
+person lady_43 {北尾まどか} [%female]
+person lady_6004 {小高佐季子} [%female]
+person extra_10 {石井秀吉} [%male]
+
+// Generations
+
+
+// Families
+(pro_41) - (pro_85 pro_87 pro_109 pro_121 pro_142 pro_150 pro_153 pro_174 pro_194 pro_219 pro_222 lady_2 lady_12 lady_14)
+(pro_85) - (pro_184 pro_185 pro_205 pro_256 pro_257 pro_261 pro_310)
+(pro_87) - (pro_198 pro_204 pro_277 pro_295 lady_6 lady_23 lady_43)
+(pro_109) - (pro_181 pro_305 lady_6004)
+(pro_142) - (pro_252 pro_298 lady_37 lady_38)
+(pro_222) - (pro_302)
+(extra_10) - (pro_22 pro_41)
+
+@endPdg

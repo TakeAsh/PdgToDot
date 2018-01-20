@@ -1,0 +1,139 @@
+graph "ShogiPlayers3" {
+graph [charset="UTF-8", rankdir="LR", splines="ortho"]
+node [fontname="Sans", shape="record"]
+
+
+
+// Attributes
+
+
+
+
+// Persons
+pro_6 [color="blue", fillcolor="lightblue", label=" 中井捨吉", style="filled"]
+pro_7 [color="blue", fillcolor="lightblue", label=" 大野源一", style="filled"]
+pro_13 [color="blue", fillcolor="lightblue", label=" 角田三男", style="filled"]
+pro_18 [color="blue", fillcolor="lightblue", label=" 升田幸三", style="filled"]
+pro_26 [color="blue", fillcolor="lightblue", label=" 大山康晴", style="filled"]
+pro_28 [color="blue", fillcolor="lightblue", label=" 山中和正", style="filled"]
+pro_30 [color="blue", fillcolor="lightblue", label=" 本間爽悦", style="filled"]
+pro_51 [color="blue", fillcolor="lightblue", label=" 二見敬三", style="filled"]
+pro_52 [color="blue", fillcolor="lightblue", label=" 西本馨", style="filled"]
+pro_58 [color="blue", fillcolor="lightblue", label=" 橋本三治", style="filled"]
+pro_66 [color="blue", fillcolor="lightblue", label=" 有吉道夫", style="filled"]
+pro_70 [color="blue", fillcolor="lightblue", label=" 賀集正三", style="filled"]
+pro_104 [color="blue", fillcolor="lightblue", label=" 田中魁秀", style="filled"]
+pro_105 [color="blue", fillcolor="lightblue", label=" 坪内利幸", style="filled"]
+pro_116 [color="blue", fillcolor="lightblue", label=" 前田祐司", style="filled"]
+pro_120 [color="blue", fillcolor="lightblue", label=" 桐谷広人", style="filled"]
+pro_135 [color="blue", fillcolor="lightblue", label=" 福崎文吾", style="filled"]
+pro_145 [color="blue", fillcolor="lightblue", label=" 依田有司", style="filled"]
+pro_151 [color="blue", fillcolor="lightblue", label=" 西川慶二", style="filled"]
+pro_158 [color="blue", fillcolor="lightblue", label=" 有森浩三", style="filled"]
+pro_162 [color="blue", fillcolor="lightblue", label=" 浦野真彦", style="filled"]
+pro_171 [color="blue", fillcolor="lightblue", label=" 阿部隆", style="filled"]
+pro_176 [color="blue", fillcolor="lightblue", label=" 中田功", style="filled"]
+pro_178 [color="blue", fillcolor="lightblue", label=" 長沼洋", style="filled"]
+pro_182 [color="blue", fillcolor="lightblue", label=" 佐藤康光", style="filled"]
+pro_199 [color="blue", fillcolor="lightblue", label=" 平藤眞吾", style="filled"]
+pro_208 [color="blue", fillcolor="lightblue", label=" 行方尚史", style="filled"]
+pro_223 [color="blue", fillcolor="lightblue", label=" 小林裕士", style="filled"]
+pro_243 [color="blue", fillcolor="lightblue", label=" 大平武洋", style="filled"]
+pro_263 [color="blue", fillcolor="lightblue", label=" 佐藤天彦", style="filled"]
+pro_272 [color="blue", fillcolor="lightblue", label=" 西川和宏", style="filled"]
+pro_299 [color="blue", fillcolor="lightblue", label=" 今泉健司", style="filled"]
+lady_25 [color="red", fillcolor="pink", label=" 山田朱未", style="filled"]
+lady_6002 [color="red", fillcolor="pink", label=" 武富礼衣", style="filled"]
+extra_3 [color="blue", fillcolor="lightblue", label=" 木見金治郎", style="filled"]
+
+// Generations
+
+
+// Families
+f0_c0 [height="0.01", shape="point", width="0.01"]
+f0_c1 [height="0.01", shape="point", width="0.01"]
+f0_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f0_c0 -- f0_c1 -- f0_c2}
+pro_6 -- f0_c1
+f0_c0 -- pro_30
+f0_c2 -- pro_162
+f1_c [height="0.01", shape="point", width="0.01"]
+pro_13 -- f1_c
+f1_c -- pro_70
+f2_c [height="0.01", shape="point", width="0.01"]
+pro_18 -- f2_c
+f2_c -- pro_120
+f3_c0 [height="0.01", shape="point", width="0.01"]
+f3_c1 [height="0.01", shape="point", width="0.01"]
+f3_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f3_c0 -- f3_c1 -- f3_c2}
+pro_26 -- f3_c1
+f3_c0 -- pro_66
+f3_c1 -- pro_176
+f3_c2 -- pro_208
+f4_c0 [height="0.01", shape="point", width="0.01"]
+f4_c1 [height="0.01", shape="point", width="0.01"]
+f4_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f4_c0 -- f4_c1 -- f4_c2}
+pro_30 -- f4_c1
+f4_c0 -- pro_104
+f4_c2 -- pro_145
+f5_c0 [height="0.01", shape="point", width="0.01"]
+f5_c1 [height="0.01", shape="point", width="0.01"]
+f5_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f5_c0 -- f5_c1 -- f5_c2}
+pro_66 -- f5_c1
+f5_c0 -- pro_105
+f5_c1 -- pro_158
+f5_c2 -- lady_25
+f6_c0 [height="0.01", shape="point", width="0.01"]
+f6_c1 [height="0.01", shape="point", width="0.01"]
+f6_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f6_c0 -- f6_c1 -- f6_c2}
+pro_70 -- f6_c1
+f6_c0 -- pro_116
+f6_c1 -- pro_151
+f6_c2 -- pro_199
+f7_c0 [height="0.01", shape="point", width="0.01"]
+f7_c1 [height="0.01", shape="point", width="0.01"]
+f7_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f7_c0 -- f7_c1 -- f7_c2}
+pro_104 -- f7_c1
+f7_c0 -- pro_135
+f7_c0 -- pro_171
+f7_c1 -- pro_178
+f7_c1 -- pro_182
+f7_c2 -- pro_223
+f8_c0 [height="0.01", shape="point", width="0.01"]
+f8_c1 [height="0.01", shape="point", width="0.01"]
+f8_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f8_c0 -- f8_c1 -- f8_c2}
+pro_120 -- f8_c1
+f8_c0 -- pro_243
+f8_c2 -- pro_299
+f9_c [height="0.01", shape="point", width="0.01"]
+pro_151 -- f9_c
+f9_c -- pro_272
+f10_c0 [height="0.01", shape="point", width="0.01"]
+f10_c1 [height="0.01", shape="point", width="0.01"]
+f10_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f10_c0 -- f10_c1 -- f10_c2}
+pro_176 -- f10_c1
+f10_c0 -- pro_263
+f10_c2 -- lady_6002
+f11_c0 [height="0.01", shape="point", width="0.01"]
+f11_c1 [height="0.01", shape="point", width="0.01"]
+f11_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f11_c0 -- f11_c1 -- f11_c2}
+extra_3 -- f11_c1
+f11_c0 -- pro_6
+f11_c0 -- pro_7
+f11_c0 -- pro_13
+f11_c1 -- pro_18
+f11_c1 -- pro_26
+f11_c1 -- pro_28
+f11_c2 -- pro_51
+f11_c2 -- pro_52
+f11_c2 -- pro_58
+
+}

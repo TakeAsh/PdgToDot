@@ -1,0 +1,314 @@
+graph "ShogiPlayers1" {
+graph [charset="UTF-8", rankdir="LR", splines="ortho"]
+node [fontname="Sans", shape="record"]
+
+
+
+// Attributes
+
+
+
+
+// Persons
+pro_1 [color="blue", fillcolor="lightblue", label=" 金易二郎", style="filled"]
+pro_2 [color="blue", fillcolor="lightblue", label=" 木村義雄", style="filled"]
+pro_4 [color="blue", fillcolor="lightblue", label=" 渡辺東一", style="filled"]
+pro_24 [color="blue", fillcolor="lightblue", label=" 北楯修哉", style="filled"]
+pro_27 [color="blue", fillcolor="lightblue", label=" 山本武雄", style="filled"]
+pro_29 [color="blue", fillcolor="lightblue", label=" 板谷四郎", style="filled"]
+pro_31 [color="blue", fillcolor="lightblue", label=" 高柳敏夫", style="filled"]
+pro_39 [color="blue", fillcolor="lightblue", label=" 花村元司", style="filled"]
+pro_46 [color="blue", fillcolor="lightblue", label=" 五十嵐豊一", style="filled"]
+pro_47 [color="blue", fillcolor="lightblue", label=" 清野静男", style="filled"]
+pro_50 [color="blue", fillcolor="lightblue", label=" 下平幸男", style="filled"]
+pro_57 [color="blue", fillcolor="lightblue", label=" 二上達也", style="filled"]
+pro_60 [color="blue", fillcolor="lightblue", label=" 北村昌男", style="filled"]
+pro_68 [color="blue", fillcolor="lightblue", label=" 芹沢博文", style="filled"]
+pro_71 [color="blue", fillcolor="lightblue", label=" 大村和久", style="filled"]
+pro_74 [color="blue", fillcolor="lightblue", label=" 佐藤大五郎", style="filled"]
+pro_75 [color="blue", fillcolor="lightblue", label=" 吉田利勝", style="filled"]
+pro_76 [color="blue", fillcolor="lightblue", label=" 北村文男", style="filled"]
+pro_80 [color="blue", fillcolor="lightblue", label=" 木村嘉孝", style="filled"]
+pro_84 [color="blue", fillcolor="lightblue", label=" 板谷進", style="filled"]
+pro_92 [color="blue", fillcolor="lightblue", label=" 中原誠", style="filled"]
+pro_96 [color="blue", fillcolor="lightblue", label=" 勝浦修", style="filled"]
+pro_97 [color="blue", fillcolor="lightblue", label=" 石田和雄", style="filled"]
+pro_102 [color="blue", fillcolor="lightblue", label=" 池田修一", style="filled"]
+pro_103 [color="blue", fillcolor="lightblue", label=" 野本虎次", style="filled"]
+pro_106 [color="blue", fillcolor="lightblue", label=" 佐藤義則", style="filled"]
+pro_107 [color="blue", fillcolor="lightblue", label=" 安恵照剛", style="filled"]
+pro_110 [color="blue", fillcolor="lightblue", label=" 宮田利男", style="filled"]
+pro_118 [color="blue", fillcolor="lightblue", label=" 伊藤果", style="filled"]
+pro_122 [color="blue", fillcolor="lightblue", label=" 有野芳人", style="filled"]
+pro_123 [color="blue", fillcolor="lightblue", label=" 小林健二", style="filled"]
+pro_124 [color="blue", fillcolor="lightblue", label=" 土佐浩司", style="filled"]
+pro_127 [color="blue", fillcolor="lightblue", label=" 田中寅彦", style="filled"]
+pro_129 [color="blue", fillcolor="lightblue", label=" 中田章道", style="filled"]
+pro_130 [color="blue", fillcolor="lightblue", label=" 大島映二", style="filled"]
+pro_137 [color="blue", fillcolor="lightblue", label=" 武者野勝巳", style="filled"]
+pro_140 [color="blue", fillcolor="lightblue", label=" 瀬戸博晴", style="filled"]
+pro_146 [color="blue", fillcolor="lightblue", label=" 島朗", style="filled"]
+pro_161 [color="blue", fillcolor="lightblue", label=" 森下卓", style="filled"]
+pro_163 [color="blue", fillcolor="lightblue", label=" 小野敦生", style="filled"]
+pro_164 [color="blue", fillcolor="lightblue", label=" 日浦市郎", style="filled"]
+pro_165 [color="blue", fillcolor="lightblue", label=" 達正光", style="filled"]
+pro_175 [color="blue", fillcolor="lightblue", label=" 羽生善治", style="filled"]
+pro_183 [color="blue", fillcolor="lightblue", label=" 森内俊之", style="filled"]
+pro_188 [color="blue", fillcolor="lightblue", label=" 小倉久史", style="filled"]
+pro_189 [color="blue", fillcolor="lightblue", label=" 屋敷伸之", style="filled"]
+pro_196 [color="blue", fillcolor="lightblue", label=" 佐藤秀司", style="filled"]
+pro_197 [color="blue", fillcolor="lightblue", label=" 杉本昌隆", style="filled"]
+pro_201 [color="blue", fillcolor="lightblue", label=" 深浦康市", style="filled"]
+pro_210 [color="blue", fillcolor="lightblue", label=" 窪田義行", style="filled"]
+pro_215 [color="blue", fillcolor="lightblue", label=" 勝又清和", style="filled"]
+pro_218 [color="blue", fillcolor="lightblue", label=" 堀口一史座", style="filled"]
+pro_221 [color="blue", fillcolor="lightblue", label=" 野月浩貴", style="filled"]
+pro_224 [color="blue", fillcolor="lightblue", label=" 佐藤紳哉", style="filled"]
+pro_226 [color="blue", fillcolor="lightblue", label=" 高野秀行", style="filled"]
+pro_228 [color="blue", fillcolor="lightblue", label=" 伊奈祐介", style="filled"]
+pro_229 [color="blue", fillcolor="lightblue", label=" 山本真也", style="filled"]
+pro_232 [color="blue", fillcolor="lightblue", label=" 金沢孝史", style="filled"]
+pro_238 [color="blue", fillcolor="lightblue", label=" 上野裕和", style="filled"]
+pro_244 [color="blue", fillcolor="lightblue", label=" 熊坂学", style="filled"]
+pro_247 [color="blue", fillcolor="lightblue", label=" 島本亮", style="filled"]
+pro_253 [color="blue", fillcolor="lightblue", label=" 村中秀史", style="filled"]
+pro_255 [color="blue", fillcolor="lightblue", label=" 広瀬章人", style="filled"]
+pro_259 [color="blue", fillcolor="lightblue", label=" 瀬川晶司", style="filled"]
+pro_267 [color="blue", fillcolor="lightblue", label=" 村田顕弘", style="filled"]
+pro_268 [color="blue", fillcolor="lightblue", label=" 及川拓馬", style="filled"]
+pro_276 [color="blue", fillcolor="lightblue", label=" 永瀬拓矢", style="filled"]
+pro_280 [color="blue", fillcolor="lightblue", label=" 佐々木勇気", style="filled"]
+pro_282 [color="blue", fillcolor="lightblue", label=" 門倉啓太", style="filled"]
+pro_284 [color="blue", fillcolor="lightblue", label=" 高見泰地", style="filled"]
+pro_290 [color="blue", fillcolor="lightblue", label=" 渡辺大夢", style="filled"]
+pro_297 [color="blue", fillcolor="lightblue", label=" 増田康宏", style="filled"]
+pro_300 [color="blue", fillcolor="lightblue", label=" 青嶋未来", style="filled"]
+pro_306 [color="blue", fillcolor="lightblue", label=" 佐々木大地", style="filled"]
+pro_307 [color="blue", fillcolor="lightblue", label=" 藤井聡太", style="filled"]
+pro_311 [color="blue", fillcolor="lightblue", label=" 斎藤明日斗", style="filled"]
+pro_312 [color="blue", fillcolor="lightblue", label=" 古森悠太", style="filled"]
+lady_7 [color="red", fillcolor="pink", label=" 清水市代", style="filled"]
+lady_10 [color="red", fillcolor="pink", label=" 石高澄恵", style="filled"]
+lady_15 [color="red", fillcolor="pink", label=" 久津知子", style="filled"]
+lady_18 [color="red", fillcolor="pink", label=" 伊藤明日香", style="filled"]
+lady_19 [color="red", fillcolor="pink", label=" 竹部さゆり", style="filled"]
+lady_20 [color="red", fillcolor="pink", label=" 早水千紗", style="filled"]
+lady_21 [color="red", fillcolor="pink", label=" 甲斐智美", style="filled"]
+lady_24 [color="red", fillcolor="pink", label=" 野田澤彩乃", style="filled"]
+lady_26 [color="red", fillcolor="pink", label=" 上田初美", style="filled"]
+lady_32 [color="red", fillcolor="pink", label=" 岩根忍", style="filled"]
+lady_35 [color="red", fillcolor="pink", label=" 室田伊緒", style="filled"]
+lady_45 [color="red", fillcolor="pink", label=" 竹俣紅", style="filled"]
+lady_46 [color="red", fillcolor="pink", label=" 北村桂香", style="filled"]
+lady_47 [color="red", fillcolor="pink", label=" 相川春香", style="filled"]
+lady_52 [color="red", fillcolor="pink", label=" 伊藤沙恵", style="filled"]
+lady_53 [color="red", fillcolor="pink", label=" 中澤沙耶", style="filled"]
+lady_54 [color="red", fillcolor="pink", label=" 高浜愛子", style="filled"]
+extra_1 [color="blue", fillcolor="lightblue", label=" 関根金次郎", style="filled"]
+
+// Generations
+
+
+// Families
+f0_c0 [height="0.01", shape="point", width="0.01"]
+f0_c1 [height="0.01", shape="point", width="0.01"]
+f0_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f0_c0 -- f0_c1 -- f0_c2}
+pro_1 -- f0_c1
+f0_c0 -- pro_27
+f0_c2 -- pro_31
+f1_c0 [height="0.01", shape="point", width="0.01"]
+f1_c1 [height="0.01", shape="point", width="0.01"]
+f1_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f1_c0 -- f1_c1 -- f1_c2}
+pro_2 -- f1_c1
+f1_c0 -- pro_24
+f1_c0 -- pro_29
+f1_c1 -- pro_39
+f1_c1 -- pro_47
+f1_c2 -- pro_80
+f2_c0 [height="0.01", shape="point", width="0.01"]
+f2_c1 [height="0.01", shape="point", width="0.01"]
+f2_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f2_c0 -- f2_c1 -- f2_c2}
+pro_4 -- f2_c1
+f2_c0 -- pro_50
+f2_c0 -- pro_57
+f2_c1 -- pro_60
+f2_c1 -- pro_74
+f2_c2 -- pro_96
+f3_c0 [height="0.01", shape="point", width="0.01"]
+f3_c1 [height="0.01", shape="point", width="0.01"]
+f3_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f3_c0 -- f3_c1 -- f3_c2}
+pro_29 -- f3_c1
+f3_c0 -- pro_71
+f3_c0 -- pro_76
+f3_c1 -- pro_84
+f3_c1 -- pro_97
+f3_c2 -- pro_129
+f4_c0 [height="0.01", shape="point", width="0.01"]
+f4_c1 [height="0.01", shape="point", width="0.01"]
+f4_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f4_c0 -- f4_c1 -- f4_c2}
+pro_31 -- f4_c1
+f4_c0 -- pro_68
+f4_c0 -- pro_92
+f4_c0 -- pro_107
+f4_c0 -- pro_110
+f4_c1 -- pro_118
+f4_c1 -- pro_127
+f4_c1 -- pro_130
+f4_c1 -- pro_146
+f4_c2 -- pro_165
+f4_c2 -- pro_253
+f4_c2 -- lady_7
+f4_c2 -- lady_20
+f5_c0 [height="0.01", shape="point", width="0.01"]
+f5_c1 [height="0.01", shape="point", width="0.01"]
+f5_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f5_c0 -- f5_c1 -- f5_c2}
+pro_39 -- f5_c1
+f5_c0 -- pro_75
+f5_c0 -- pro_102
+f5_c0 -- pro_103
+f5_c1 -- pro_137
+f5_c1 -- pro_161
+f5_c2 -- pro_201
+f5_c2 -- pro_210
+f6_c [height="0.01", shape="point", width="0.01"]
+pro_46 -- f6_c
+f6_c -- pro_189
+f7_c [height="0.01", shape="point", width="0.01"]
+pro_47 -- f7_c
+f7_c -- pro_124
+f8_c [height="0.01", shape="point", width="0.01"]
+pro_50 -- f8_c
+f8_c -- pro_122
+f9_c0 [height="0.01", shape="point", width="0.01"]
+f9_c1 [height="0.01", shape="point", width="0.01"]
+f9_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f9_c0 -- f9_c1 -- f9_c2}
+pro_57 -- f9_c1
+f9_c0 -- pro_140
+f9_c2 -- pro_175
+f10_c [height="0.01", shape="point", width="0.01"]
+pro_68 -- f10_c
+f10_c -- pro_106
+f11_c [height="0.01", shape="point", width="0.01"]
+pro_76 -- f11_c
+f11_c -- pro_229
+f12_c0 [height="0.01", shape="point", width="0.01"]
+f12_c1 [height="0.01", shape="point", width="0.01"]
+f12_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f12_c0 -- f12_c1 -- f12_c2}
+pro_84 -- f12_c1
+f12_c0 -- pro_123
+f12_c2 -- pro_197
+f13_c0 [height="0.01", shape="point", width="0.01"]
+f13_c1 [height="0.01", shape="point", width="0.01"]
+f13_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f13_c0 -- f13_c1 -- f13_c2}
+pro_92 -- f13_c1
+f13_c0 -- pro_188
+f13_c0 -- pro_196
+f13_c1 -- pro_226
+f13_c1 -- pro_244
+f13_c2 -- lady_21
+f14_c0 [height="0.01", shape="point", width="0.01"]
+f14_c1 [height="0.01", shape="point", width="0.01"]
+f14_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f14_c0 -- f14_c1 -- f14_c2}
+pro_96 -- f14_c1
+f14_c0 -- pro_183
+f14_c0 -- pro_221
+f14_c1 -- pro_232
+f14_c1 -- pro_255
+f14_c2 -- lady_15
+f15_c0 [height="0.01", shape="point", width="0.01"]
+f15_c1 [height="0.01", shape="point", width="0.01"]
+f15_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f15_c0 -- f15_c1 -- f15_c2}
+pro_97 -- f15_c1
+f15_c0 -- pro_215
+f15_c0 -- pro_280
+f15_c1 -- pro_282
+f15_c1 -- pro_284
+f15_c2 -- pro_290
+f16_c0 [height="0.01", shape="point", width="0.01"]
+f16_c1 [height="0.01", shape="point", width="0.01"]
+f16_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f16_c0 -- f16_c1 -- f16_c2}
+pro_107 -- f16_c1
+f16_c0 -- pro_163
+f16_c0 -- pro_164
+f16_c0 -- pro_224
+f16_c1 -- pro_238
+f16_c1 -- pro_259
+f16_c1 -- pro_276
+f16_c2 -- pro_300
+f16_c2 -- lady_47
+f17_c [height="0.01", shape="point", width="0.01"]
+pro_110 -- f17_c
+f17_c -- pro_311
+f18_c0 [height="0.01", shape="point", width="0.01"]
+f18_c1 [height="0.01", shape="point", width="0.01"]
+f18_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f18_c0 -- f18_c1 -- f18_c2}
+pro_118 -- f18_c1
+f18_c0 -- pro_218
+f18_c0 -- pro_268
+f18_c1 -- lady_18
+f18_c1 -- lady_19
+f18_c2 -- lady_24
+f18_c2 -- lady_26
+f19_c0 [height="0.01", shape="point", width="0.01"]
+f19_c1 [height="0.01", shape="point", width="0.01"]
+f19_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f19_c0 -- f19_c1 -- f19_c2}
+pro_123 -- f19_c1
+f19_c0 -- pro_228
+f19_c0 -- pro_247
+f19_c1 -- pro_312
+f19_c1 -- lady_32
+f19_c2 -- lady_46
+f20_c [height="0.01", shape="point", width="0.01"]
+pro_129 -- f20_c
+f20_c -- pro_267
+f21_c [height="0.01", shape="point", width="0.01"]
+pro_137 -- f21_c
+f21_c -- lady_10
+f22_c [height="0.01", shape="point", width="0.01"]
+pro_161 -- f22_c
+f22_c -- pro_297
+f23_c [height="0.01", shape="point", width="0.01"]
+pro_183 -- f23_c
+f23_c -- lady_45
+f24_c [height="0.01", shape="point", width="0.01"]
+pro_189 -- f24_c
+f24_c -- lady_52
+f25_c0 [height="0.01", shape="point", width="0.01"]
+f25_c1 [height="0.01", shape="point", width="0.01"]
+f25_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f25_c0 -- f25_c1 -- f25_c2}
+pro_197 -- f25_c1
+f25_c0 -- pro_307
+f25_c1 -- lady_35
+f25_c2 -- lady_53
+f26_c [height="0.01", shape="point", width="0.01"]
+pro_201 -- f26_c
+f26_c -- pro_306
+f27_c [height="0.01", shape="point", width="0.01"]
+pro_229 -- f27_c
+f27_c -- lady_54
+f28_c0 [height="0.01", shape="point", width="0.01"]
+f28_c1 [height="0.01", shape="point", width="0.01"]
+f28_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f28_c0 -- f28_c1 -- f28_c2}
+extra_1 -- f28_c1
+f28_c0 -- pro_1
+f28_c0 -- pro_2
+f28_c1 -- pro_4
+f28_c2 -- pro_46
+
+}

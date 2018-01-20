@@ -1,0 +1,86 @@
+@startPdg "ShogiPlayers2"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_3 {金子金五郎} [%male]
+person pro_5 {萩原淳} [%male]
+person pro_12 {梶一郎} [%male]
+person pro_15 {松下力} [%male]
+person pro_17 {小堀清一} [%male]
+person pro_25 {松田茂役} [%male]
+person pro_33 {吉田六彦} [%male]
+person pro_40 {山川次彦} [%male]
+person pro_42 {加藤博二} [%male]
+person pro_59 {津村常吉} [%male]
+person pro_61 {関根茂} [%male]
+person pro_69 {関屋喜代作} [%male]
+person pro_86 {大内延介} [%male]
+person pro_91 {田辺一郎} [%male]
+person pro_95 {河口俊彦} [%male]
+person pro_115 {椎橋金司} [%male]
+person pro_117 {飯野健二} [%male]
+person pro_144 {泉正樹} [%male]
+person pro_148 {塚田泰明} [%male]
+person pro_154 {堀口弘治} [%male]
+person pro_155 {大野八一雄} [%male]
+person pro_156 {加瀬純一} [%male]
+person pro_159 {飯田弘之} [%male]
+person pro_168 {富岡英作} [%male]
+person pro_169 {関浩} [%male]
+person pro_187 {木下浩一} [%male]
+person pro_200 {豊川孝弘} [%male]
+person pro_202 {真田圭一} [%male]
+person pro_203 {飯塚祐紀} [%male]
+person pro_213 {鈴木大介} [%male]
+person pro_214 {北島忠雄} [%male]
+person pro_217 {田村康介} [%male]
+person pro_237 {千葉幸生} [%male]
+person pro_240 {佐々木慎} [%male]
+person pro_250 {佐藤和俊} [%male]
+person pro_258 {遠山雄亮} [%male]
+person pro_262 {戸辺誠} [%male]
+person pro_265 {金井恒太} [%male]
+person pro_270 {田中悠一} [%male]
+person pro_285 {藤森哲也} [%male]
+person pro_301 {梶浦宏孝} [%male]
+person lady_5 {長沢千和子} [%female]
+person lady_16 {矢内理絵子} [%female]
+person lady_27 {坂東香菜子} [%female]
+person lady_31 {貞升南} [%female]
+person lady_39 {山口恵梨子} [%female]
+person lady_48 {飯野愛} [%female]
+person lady_51 {塚田恵梨花} [%female]
+person lady_58 {頼本奈菜} [%female]
+person extra_2 {土居市太郎} [%male]
+
+// Generations
+
+
+// Families
+(pro_3) - (pro_17 pro_25 pro_40)
+(pro_15) - (pro_91 pro_115 pro_203)
+(pro_17) - (pro_59 pro_95)
+(pro_25) - (pro_156 pro_187 pro_202 lady_5)
+(pro_40) - (pro_61 pro_169)
+(pro_42) - (pro_154)
+(pro_61) - (pro_117 pro_144 pro_214 pro_237 pro_240 pro_270 lady_16)
+(pro_69) - (pro_200)
+(pro_86) - (pro_148 pro_159 pro_168 pro_213 pro_217)
+(pro_115) - (pro_155)
+(pro_117) - (pro_265 lady_27 lady_48)
+(pro_148) - (pro_285 lady_51)
+(pro_154) - (lady_31 lady_39)
+(pro_156) - (pro_250 pro_258 pro_262)
+(pro_203) - (lady_58)
+(pro_213) - (pro_301)
+(extra_2) - (pro_3 pro_5 pro_12 pro_15 pro_33 pro_42 pro_69 pro_86)
+
+@endPdg

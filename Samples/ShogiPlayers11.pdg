@@ -1,0 +1,40 @@
+@startPdg "ShogiPlayers11"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_23 {岡崎史明} [%male]
+person pro_38 {北村秀治郎} [%male]
+person pro_44 {灘蓮照} [%male]
+person pro_53 {神田鎮雄} [%male]
+person pro_55 {増田敏二} [%male]
+person pro_78 {伊達康夫} [%male]
+person pro_93 {桐山清澄} [%male]
+person pro_141 {児玉孝一} [%male]
+person pro_166 {伊藤博文} [%male]
+person pro_179 {神崎健二} [%male]
+person pro_212 {矢倉規広} [%male]
+person pro_264 {豊島将之} [%male]
+person lady_6003 {藤井奈々} [%female]
+person extra_11 {神田辰之助} [%male]
+
+// Generations
+
+
+// Families
+(pro_23) - (pro_55 pro_78 pro_141)
+(pro_44) - (pro_53 pro_179)
+(pro_55) - (pro_93)
+(pro_78) - (pro_166)
+(pro_93) - (pro_212 pro_264)
+(pro_166) - (lady_6003)
+(extra_11) - (pro_23 pro_38 pro_44)
+
+@endPdg

@@ -1,0 +1,25 @@
+@startPdg "ShogiPlayers17"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_54 {熊谷達人} [%male]
+person pro_72 {大原英二} [%male]
+person pro_133 {青木清} [%male]
+person extra_17 {野村慶虎} [%male]
+
+// Generations
+
+
+// Families
+(pro_54) - (pro_133)
+(extra_17) - (pro_54 pro_72)
+
+@endPdg

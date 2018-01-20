@@ -1,0 +1,22 @@
+@startPdg "ShogiPlayers12"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_36 {星田啓三} [%male]
+person extra_12 {阪田三吉} [%male]
+
+// Generations
+
+
+// Families
+(extra_12) - (pro_36)
+
+@endPdg

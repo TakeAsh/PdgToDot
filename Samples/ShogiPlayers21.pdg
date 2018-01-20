@@ -1,0 +1,21 @@
+@startPdg "ShogiPlayers21"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person lady_1 {関根紀代子} [%female]
+
+// Generations
+
+
+// Families
+
+
+@endPdg

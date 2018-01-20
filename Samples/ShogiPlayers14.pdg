@@ -1,0 +1,25 @@
+@startPdg "ShogiPlayers14"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_43 {丸田祐三} [%male]
+person pro_132 {松浦隆一} [%male]
+person pro_152 {武市三郎} [%male]
+person extra_14 {平野信助} [%male]
+
+// Generations
+
+
+// Families
+(pro_43) - (pro_132 pro_152)
+(extra_14) - (pro_43)
+
+@endPdg

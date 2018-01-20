@@ -1,0 +1,65 @@
+@startPdg "ShogiPlayers8"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_19 {高島一岐代} [%male]
+person pro_77 {内藤國雄} [%male]
+person pro_83 {高島弘光} [%male]
+person pro_98 {若松政和} [%male]
+person pro_99 {森安秀光} [%male]
+person pro_108 {森安正幸} [%male]
+person pro_112 {小阪昇} [%male]
+person pro_113 {淡路仁茂} [%male]
+person pro_125 {酒井順吉} [%male]
+person pro_128 {東和男} [%male]
+person pro_131 {谷川浩司} [%male]
+person pro_138 {脇謙二} [%male]
+person pro_157 {井上慶太} [%male]
+person pro_160 {神吉宏充} [%male]
+person pro_170 {本間博} [%male]
+person pro_186 {野田敬三} [%male]
+person pro_190 {藤原直哉} [%male]
+person pro_192 {畠山鎮} [%male]
+person pro_193 {畠山成幸} [%male]
+person pro_207 {久保利明} [%male]
+person pro_242 {村田智弘} [%male]
+person pro_269 {稲葉陽} [%male]
+person pro_273 {渡辺正和} [%male]
+person pro_278 {菅井竜也} [%male]
+person pro_281 {船江恒平} [%male]
+person pro_286 {斎藤慎太郎} [%male]
+person pro_294 {三枚堂達也} [%male]
+person pro_296 {宮本広志} [%male]
+person pro_304 {都成竜馬} [%male]
+person lady_3 {森安多恵子} [%female]
+person lady_28 {村田智穂} [%female]
+person lady_44 {長谷川優貴} [%female]
+person lady_49 {山根ことみ} [%female]
+person extra_8 {藤内金吾} [%male]
+
+// Generations
+
+
+// Families
+(pro_19) - (pro_83 pro_128 pro_138 lady_3)
+(pro_77) - (pro_160 pro_294)
+(pro_98) - (pro_131 pro_157 pro_190)
+(pro_99) - (pro_170 pro_186)
+(pro_108) - (pro_192 pro_193 pro_296)
+(pro_113) - (pro_207 pro_242 lady_28)
+(pro_131) - (pro_304)
+(pro_157) - (pro_269 pro_278 pro_281)
+(pro_160) - (pro_273)
+(pro_186) - (lady_44 lady_49)
+(pro_192) - (pro_286)
+(extra_8) - (pro_19 pro_77 pro_98 pro_99 pro_108 pro_112 pro_113 pro_125)
+
+@endPdg

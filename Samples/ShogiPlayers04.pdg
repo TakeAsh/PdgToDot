@@ -1,0 +1,23 @@
+@startPdg "ShogiPlayers4"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_8 {志沢春吉} [%male]
+person pro_9 {市川一郎} [%male]
+person extra_4 {大崎熊雄} [%male]
+
+// Generations
+
+
+// Families
+(extra_4) - (pro_8 pro_9)
+
+@endPdg

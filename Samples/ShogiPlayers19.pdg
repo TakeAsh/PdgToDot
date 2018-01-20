@@ -1,0 +1,30 @@
+@startPdg "ShogiPlayers19"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_114 {青野照市} [%male]
+person pro_119 {菊地常夫} [%male]
+person pro_136 {鈴木輝彦} [%male]
+person pro_149 {神谷広志} [%male]
+person pro_230 {中尾敏之} [%male]
+person pro_248 {西尾明} [%male]
+person pro_287 {八代弥} [%male]
+person lady_22 {安食総子} [%female]
+person extra_19 {廣津久雄} [%male]
+
+// Generations
+
+
+// Families
+(pro_114) - (pro_248 pro_287 lady_22)
+(extra_19) - (pro_114 pro_119 pro_136 pro_149 pro_230)
+
+@endPdg

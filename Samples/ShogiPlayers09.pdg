@@ -1,0 +1,30 @@
+@startPdg "ShogiPlayers9"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_21 {永沢勝雄} [%male]
+person pro_62 {大友昇} [%male]
+person pro_81 {山口千嶺} [%male]
+person pro_100 {森けい二} [%male]
+person pro_195 {郷田真隆} [%male]
+person lady_33 {里見香奈} [%female]
+person lady_56 {里見咲紀} [%female]
+person extra_9 {飯塚勘一郎} [%male]
+
+// Generations
+
+
+// Families
+(pro_62) - (pro_100 pro_195)
+(pro_100) - (lady_33 lady_56)
+(extra_9) - (pro_21 pro_62 pro_81)
+
+@endPdg

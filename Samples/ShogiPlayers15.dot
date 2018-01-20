@@ -1,0 +1,58 @@
+graph "ShogiPlayers15" {
+graph [charset="UTF-8", rankdir="LR", splines="ortho"]
+node [fontname="Sans", shape="record"]
+
+
+
+// Attributes
+
+
+
+
+// Persons
+pro_45 [color="blue", fillcolor="lightblue", label=" 平野広吉", style="filled"]
+pro_172 [color="blue", fillcolor="lightblue", label=" 所司和晴", style="filled"]
+pro_206 [color="blue", fillcolor="lightblue", label=" 川上猛", style="filled"]
+pro_209 [color="blue", fillcolor="lightblue", label=" 岡崎洋", style="filled"]
+pro_231 [color="blue", fillcolor="lightblue", label=" 松尾歩", style="filled"]
+pro_235 [color="blue", fillcolor="lightblue", label=" 渡辺明", style="filled"]
+pro_241 [color="blue", fillcolor="lightblue", label=" 宮田敦史", style="filled"]
+pro_289 [color="blue", fillcolor="lightblue", label=" 石田直裕", style="filled"]
+pro_293 [color="blue", fillcolor="lightblue", label=" 石井健太郎", style="filled"]
+pro_303 [color="blue", fillcolor="lightblue", label=" 近藤誠也", style="filled"]
+pro_308 [color="blue", fillcolor="lightblue", label=" 大橋貴洸", style="filled"]
+lady_36 [color="red", fillcolor="pink", label=" 伊奈川愛菓", style="filled"]
+lady_41 [color="red", fillcolor="pink", label=" 渡辺弥生", style="filled"]
+extra_15 [color="blue", fillcolor="lightblue", label=" 斉藤銀次郎", style="filled"]
+
+// Generations
+
+
+// Families
+f0_c0 [height="0.01", shape="point", width="0.01"]
+f0_c1 [height="0.01", shape="point", width="0.01"]
+f0_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f0_c0 -- f0_c1 -- f0_c2}
+pro_45 -- f0_c1
+f0_c0 -- pro_172
+f0_c1 -- pro_206
+f0_c2 -- pro_209
+f1_c0 [height="0.01", shape="point", width="0.01"]
+f1_c1 [height="0.01", shape="point", width="0.01"]
+f1_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f1_c0 -- f1_c1 -- f1_c2}
+pro_172 -- f1_c1
+f1_c0 -- pro_231
+f1_c0 -- pro_235
+f1_c0 -- pro_241
+f1_c1 -- pro_289
+f1_c1 -- pro_293
+f1_c1 -- pro_303
+f1_c2 -- pro_308
+f1_c2 -- lady_36
+f1_c2 -- lady_41
+f2_c [height="0.01", shape="point", width="0.01"]
+extra_15 -- f2_c
+f2_c -- pro_45
+
+}

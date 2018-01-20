@@ -1,0 +1,88 @@
+graph "ShogiPlayers6" {
+graph [charset="UTF-8", rankdir="LR", splines="ortho"]
+node [fontname="Sans", shape="record"]
+
+
+
+// Attributes
+
+
+
+
+// Persons
+pro_14 [color="blue", fillcolor="lightblue", label=" 加藤治郎", style="filled"]
+pro_34 [color="blue", fillcolor="lightblue", label=" 富沢幹雄", style="filled"]
+pro_35 [color="blue", fillcolor="lightblue", label=" 原田泰夫", style="filled"]
+pro_49 [color="blue", fillcolor="lightblue", label=" 木川貴一", style="filled"]
+pro_63 [color="blue", fillcolor="lightblue", label=" 佐藤庄平", style="filled"]
+pro_82 [color="blue", fillcolor="lightblue", label=" 木村義徳", style="filled"]
+pro_89 [color="blue", fillcolor="lightblue", label=" 山口英夫", style="filled"]
+pro_90 [color="blue", fillcolor="lightblue", label=" 桜井昇", style="filled"]
+pro_111 [color="blue", fillcolor="lightblue", label=" 真部一男", style="filled"]
+pro_167 [color="blue", fillcolor="lightblue", label=" 小林宏", style="filled"]
+pro_173 [color="blue", fillcolor="lightblue", label=" 中田宏樹", style="filled"]
+pro_220 [color="blue", fillcolor="lightblue", label=" 近藤正和", style="filled"]
+pro_236 [color="blue", fillcolor="lightblue", label=" 飯島栄治", style="filled"]
+pro_245 [color="blue", fillcolor="lightblue", label=" 藤倉勇樹", style="filled"]
+pro_246 [color="blue", fillcolor="lightblue", label=" 横山泰明", style="filled"]
+pro_249 [color="blue", fillcolor="lightblue", label=" 村山慈明", style="filled"]
+pro_266 [color="blue", fillcolor="lightblue", label=" 伊藤真吾", style="filled"]
+lady_17 [color="red", fillcolor="pink", label=" 千葉涼子", style="filled"]
+lady_29 [color="red", fillcolor="pink", label=" 鈴木環那", style="filled"]
+lady_34 [color="red", fillcolor="pink", label=" 井道千尋", style="filled"]
+lady_50 [color="red", fillcolor="pink", label=" 和田あき", style="filled"]
+extra_6 [color="blue", fillcolor="lightblue", label=" 山本樟郎", style="filled"]
+
+// Generations
+
+
+// Families
+f0_c0 [height="0.01", shape="point", width="0.01"]
+f0_c1 [height="0.01", shape="point", width="0.01"]
+f0_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f0_c0 -- f0_c1 -- f0_c2}
+pro_14 -- f0_c1
+f0_c0 -- pro_35
+f0_c0 -- pro_49
+f0_c1 -- pro_82
+f0_c2 -- pro_111
+f1_c0 [height="0.01", shape="point", width="0.01"]
+f1_c1 [height="0.01", shape="point", width="0.01"]
+f1_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f1_c0 -- f1_c1 -- f1_c2}
+pro_35 -- f1_c1
+f1_c0 -- pro_63
+f1_c0 -- pro_89
+f1_c1 -- pro_90
+f1_c1 -- pro_220
+f1_c2 -- lady_29
+f2_c [height="0.01", shape="point", width="0.01"]
+pro_82 -- f2_c
+f2_c -- lady_34
+f3_c0 [height="0.01", shape="point", width="0.01"]
+f3_c1 [height="0.01", shape="point", width="0.01"]
+f3_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f3_c0 -- f3_c1 -- f3_c2}
+pro_90 -- f3_c1
+f3_c0 -- pro_173
+f3_c0 -- pro_236
+f3_c0 -- pro_245
+f3_c1 -- pro_246
+f3_c1 -- pro_249
+f3_c2 -- pro_266
+f3_c2 -- lady_17
+f4_c [height="0.01", shape="point", width="0.01"]
+pro_111 -- f4_c
+f4_c -- pro_167
+f5_c [height="0.01", shape="point", width="0.01"]
+pro_245 -- f5_c
+f5_c -- lady_50
+f6_c0 [height="0.01", shape="point", width="0.01"]
+f6_c1 [height="0.01", shape="point", width="0.01"]
+f6_c2 [height="0.01", shape="point", width="0.01"]
+{rank=same; f6_c0 -- f6_c1 -- f6_c2}
+extra_6 -- f6_c1
+f6_c0 -- pro_14
+f6_c2 -- pro_34
+
+}

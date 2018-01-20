@@ -1,0 +1,205 @@
+# PdgToDot sample (Shogi Players)
+
+DIR_SAMPLES = ./Samples
+
+SVGS = \
+	$(DIR_SAMPLES)/ShogiPlayers01.svg \
+	$(DIR_SAMPLES)/ShogiPlayers02.svg \
+	$(DIR_SAMPLES)/ShogiPlayers03.svg \
+	$(DIR_SAMPLES)/ShogiPlayers04.svg \
+	$(DIR_SAMPLES)/ShogiPlayers05.svg \
+	$(DIR_SAMPLES)/ShogiPlayers06.svg \
+	$(DIR_SAMPLES)/ShogiPlayers07.svg \
+	$(DIR_SAMPLES)/ShogiPlayers08.svg \
+	$(DIR_SAMPLES)/ShogiPlayers09.svg \
+	$(DIR_SAMPLES)/ShogiPlayers10.svg \
+	$(DIR_SAMPLES)/ShogiPlayers11.svg \
+	$(DIR_SAMPLES)/ShogiPlayers12.svg \
+	$(DIR_SAMPLES)/ShogiPlayers13.svg \
+	$(DIR_SAMPLES)/ShogiPlayers14.svg \
+	$(DIR_SAMPLES)/ShogiPlayers15.svg \
+	$(DIR_SAMPLES)/ShogiPlayers16.svg \
+	$(DIR_SAMPLES)/ShogiPlayers17.svg \
+	$(DIR_SAMPLES)/ShogiPlayers18.svg \
+	$(DIR_SAMPLES)/ShogiPlayers19.svg \
+	$(DIR_SAMPLES)/ShogiPlayers20.svg \
+	$(DIR_SAMPLES)/ShogiPlayers21.svg \
+	$(DIR_SAMPLES)/ShogiPlayers22.svg
+PNGS = \
+	$(DIR_SAMPLES)/ShogiPlayers01.png \
+	$(DIR_SAMPLES)/ShogiPlayers02.png \
+	$(DIR_SAMPLES)/ShogiPlayers03.png \
+	$(DIR_SAMPLES)/ShogiPlayers04.png \
+	$(DIR_SAMPLES)/ShogiPlayers05.png \
+	$(DIR_SAMPLES)/ShogiPlayers06.png \
+	$(DIR_SAMPLES)/ShogiPlayers07.png \
+	$(DIR_SAMPLES)/ShogiPlayers08.png \
+	$(DIR_SAMPLES)/ShogiPlayers09.png \
+	$(DIR_SAMPLES)/ShogiPlayers10.png \
+	$(DIR_SAMPLES)/ShogiPlayers11.png \
+	$(DIR_SAMPLES)/ShogiPlayers12.png \
+	$(DIR_SAMPLES)/ShogiPlayers13.png \
+	$(DIR_SAMPLES)/ShogiPlayers14.png \
+	$(DIR_SAMPLES)/ShogiPlayers15.png \
+	$(DIR_SAMPLES)/ShogiPlayers16.png \
+	$(DIR_SAMPLES)/ShogiPlayers17.png \
+	$(DIR_SAMPLES)/ShogiPlayers18.png \
+	$(DIR_SAMPLES)/ShogiPlayers19.png \
+	$(DIR_SAMPLES)/ShogiPlayers20.png \
+	$(DIR_SAMPLES)/ShogiPlayers21.png \
+	$(DIR_SAMPLES)/ShogiPlayers22.png
+DOTS = \
+	$(DIR_SAMPLES)/ShogiPlayers01.dot \
+	$(DIR_SAMPLES)/ShogiPlayers02.dot \
+	$(DIR_SAMPLES)/ShogiPlayers03.dot \
+	$(DIR_SAMPLES)/ShogiPlayers04.dot \
+	$(DIR_SAMPLES)/ShogiPlayers05.dot \
+	$(DIR_SAMPLES)/ShogiPlayers06.dot \
+	$(DIR_SAMPLES)/ShogiPlayers07.dot \
+	$(DIR_SAMPLES)/ShogiPlayers08.dot \
+	$(DIR_SAMPLES)/ShogiPlayers09.dot \
+	$(DIR_SAMPLES)/ShogiPlayers10.dot \
+	$(DIR_SAMPLES)/ShogiPlayers11.dot \
+	$(DIR_SAMPLES)/ShogiPlayers12.dot \
+	$(DIR_SAMPLES)/ShogiPlayers13.dot \
+	$(DIR_SAMPLES)/ShogiPlayers14.dot \
+	$(DIR_SAMPLES)/ShogiPlayers15.dot \
+	$(DIR_SAMPLES)/ShogiPlayers16.dot \
+	$(DIR_SAMPLES)/ShogiPlayers17.dot \
+	$(DIR_SAMPLES)/ShogiPlayers18.dot \
+	$(DIR_SAMPLES)/ShogiPlayers19.dot \
+	$(DIR_SAMPLES)/ShogiPlayers20.dot \
+	$(DIR_SAMPLES)/ShogiPlayers21.dot \
+	$(DIR_SAMPLES)/ShogiPlayers22.dot
+
+.SUFFIXES: .svg .png .dot .pdg
+
+.dot.svg:
+	dot -Tsvg -o $@ $<
+
+.dot.png:
+	dot -Tpng -o $@ $<
+
+.pdg.dot:
+	perl ./PdgToDot.pl $<
+
+all: svg png
+
+svg: $(SVGS)
+
+png: $(PNGS)
+
+dot: $(DOTS)
+
+clean:
+	del /Q "$(DIR_SAMPLES)\*.svg" "$(DIR_SAMPLES)\*.png" "$(DIR_SAMPLES)\*.dot" "$(DIR_SAMPLES)\*_LR.pdg"
+
+ShogiPlayers01: $(DIR_SAMPLES)/ShogiPlayers01.svg $(DIR_SAMPLES)/ShogiPlayers01.png
+$(DIR_SAMPLES)/ShogiPlayers01.svg:
+$(DIR_SAMPLES)/ShogiPlayers01.png:
+$(DIR_SAMPLES)/ShogiPlayers01.dot:
+
+ShogiPlayers02: $(DIR_SAMPLES)/ShogiPlayers02.svg $(DIR_SAMPLES)/ShogiPlayers02.png
+$(DIR_SAMPLES)/ShogiPlayers02.svg:
+$(DIR_SAMPLES)/ShogiPlayers02.png:
+$(DIR_SAMPLES)/ShogiPlayers02.dot:
+
+ShogiPlayers03: $(DIR_SAMPLES)/ShogiPlayers03.svg $(DIR_SAMPLES)/ShogiPlayers03.png
+$(DIR_SAMPLES)/ShogiPlayers03.svg:
+$(DIR_SAMPLES)/ShogiPlayers03.png:
+$(DIR_SAMPLES)/ShogiPlayers03.dot:
+
+ShogiPlayers04: $(DIR_SAMPLES)/ShogiPlayers04.svg $(DIR_SAMPLES)/ShogiPlayers04.png
+$(DIR_SAMPLES)/ShogiPlayers04.svg:
+$(DIR_SAMPLES)/ShogiPlayers04.png:
+$(DIR_SAMPLES)/ShogiPlayers04.dot:
+
+ShogiPlayers05: $(DIR_SAMPLES)/ShogiPlayers05.svg $(DIR_SAMPLES)/ShogiPlayers05.png
+$(DIR_SAMPLES)/ShogiPlayers05.svg:
+$(DIR_SAMPLES)/ShogiPlayers05.png:
+$(DIR_SAMPLES)/ShogiPlayers05.dot:
+
+ShogiPlayers06: $(DIR_SAMPLES)/ShogiPlayers06.svg $(DIR_SAMPLES)/ShogiPlayers06.png
+$(DIR_SAMPLES)/ShogiPlayers06.svg:
+$(DIR_SAMPLES)/ShogiPlayers06.png:
+$(DIR_SAMPLES)/ShogiPlayers06.dot:
+
+ShogiPlayers07: $(DIR_SAMPLES)/ShogiPlayers07.svg $(DIR_SAMPLES)/ShogiPlayers07.png
+$(DIR_SAMPLES)/ShogiPlayers07.svg:
+$(DIR_SAMPLES)/ShogiPlayers07.png:
+$(DIR_SAMPLES)/ShogiPlayers07.dot:
+
+ShogiPlayers08: $(DIR_SAMPLES)/ShogiPlayers08.svg $(DIR_SAMPLES)/ShogiPlayers08.png
+$(DIR_SAMPLES)/ShogiPlayers08.svg:
+$(DIR_SAMPLES)/ShogiPlayers08.png:
+$(DIR_SAMPLES)/ShogiPlayers08.dot:
+
+ShogiPlayers09: $(DIR_SAMPLES)/ShogiPlayers09.svg $(DIR_SAMPLES)/ShogiPlayers09.png
+$(DIR_SAMPLES)/ShogiPlayers09.svg:
+$(DIR_SAMPLES)/ShogiPlayers09.png:
+$(DIR_SAMPLES)/ShogiPlayers09.dot:
+
+ShogiPlayers10: $(DIR_SAMPLES)/ShogiPlayers10.svg $(DIR_SAMPLES)/ShogiPlayers10.png
+$(DIR_SAMPLES)/ShogiPlayers10.svg:
+$(DIR_SAMPLES)/ShogiPlayers10.png:
+$(DIR_SAMPLES)/ShogiPlayers10.dot:
+
+ShogiPlayers11: $(DIR_SAMPLES)/ShogiPlayers11.svg $(DIR_SAMPLES)/ShogiPlayers11.png
+$(DIR_SAMPLES)/ShogiPlayers11.svg:
+$(DIR_SAMPLES)/ShogiPlayers11.png:
+$(DIR_SAMPLES)/ShogiPlayers11.dot:
+
+ShogiPlayers12: $(DIR_SAMPLES)/ShogiPlayers12.svg $(DIR_SAMPLES)/ShogiPlayers12.png
+$(DIR_SAMPLES)/ShogiPlayers12.svg:
+$(DIR_SAMPLES)/ShogiPlayers12.png:
+$(DIR_SAMPLES)/ShogiPlayers12.dot:
+
+ShogiPlayers13: $(DIR_SAMPLES)/ShogiPlayers13.svg $(DIR_SAMPLES)/ShogiPlayers13.png
+$(DIR_SAMPLES)/ShogiPlayers13.svg:
+$(DIR_SAMPLES)/ShogiPlayers13.png:
+$(DIR_SAMPLES)/ShogiPlayers13.dot:
+
+ShogiPlayers14: $(DIR_SAMPLES)/ShogiPlayers14.svg $(DIR_SAMPLES)/ShogiPlayers14.png
+$(DIR_SAMPLES)/ShogiPlayers14.svg:
+$(DIR_SAMPLES)/ShogiPlayers14.png:
+$(DIR_SAMPLES)/ShogiPlayers14.dot:
+
+ShogiPlayers15: $(DIR_SAMPLES)/ShogiPlayers15.svg $(DIR_SAMPLES)/ShogiPlayers15.png
+$(DIR_SAMPLES)/ShogiPlayers15.svg:
+$(DIR_SAMPLES)/ShogiPlayers15.png:
+$(DIR_SAMPLES)/ShogiPlayers15.dot:
+
+ShogiPlayers16: $(DIR_SAMPLES)/ShogiPlayers16.svg $(DIR_SAMPLES)/ShogiPlayers16.png
+$(DIR_SAMPLES)/ShogiPlayers16.svg:
+$(DIR_SAMPLES)/ShogiPlayers16.png:
+$(DIR_SAMPLES)/ShogiPlayers16.dot:
+
+ShogiPlayers17: $(DIR_SAMPLES)/ShogiPlayers17.svg $(DIR_SAMPLES)/ShogiPlayers17.png
+$(DIR_SAMPLES)/ShogiPlayers17.svg:
+$(DIR_SAMPLES)/ShogiPlayers17.png:
+$(DIR_SAMPLES)/ShogiPlayers17.dot:
+
+ShogiPlayers18: $(DIR_SAMPLES)/ShogiPlayers18.svg $(DIR_SAMPLES)/ShogiPlayers18.png
+$(DIR_SAMPLES)/ShogiPlayers18.svg:
+$(DIR_SAMPLES)/ShogiPlayers18.png:
+$(DIR_SAMPLES)/ShogiPlayers18.dot:
+
+ShogiPlayers19: $(DIR_SAMPLES)/ShogiPlayers19.svg $(DIR_SAMPLES)/ShogiPlayers19.png
+$(DIR_SAMPLES)/ShogiPlayers19.svg:
+$(DIR_SAMPLES)/ShogiPlayers19.png:
+$(DIR_SAMPLES)/ShogiPlayers19.dot:
+
+ShogiPlayers20: $(DIR_SAMPLES)/ShogiPlayers20.svg $(DIR_SAMPLES)/ShogiPlayers20.png
+$(DIR_SAMPLES)/ShogiPlayers20.svg:
+$(DIR_SAMPLES)/ShogiPlayers20.png:
+$(DIR_SAMPLES)/ShogiPlayers20.dot:
+
+ShogiPlayers21: $(DIR_SAMPLES)/ShogiPlayers21.svg $(DIR_SAMPLES)/ShogiPlayers21.png
+$(DIR_SAMPLES)/ShogiPlayers21.svg:
+$(DIR_SAMPLES)/ShogiPlayers21.png:
+$(DIR_SAMPLES)/ShogiPlayers21.dot:
+
+ShogiPlayers22: $(DIR_SAMPLES)/ShogiPlayers22.svg $(DIR_SAMPLES)/ShogiPlayers22.png
+$(DIR_SAMPLES)/ShogiPlayers22.svg:
+$(DIR_SAMPLES)/ShogiPlayers22.png:
+$(DIR_SAMPLES)/ShogiPlayers22.dot:

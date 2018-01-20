@@ -1,0 +1,66 @@
+@startPdg "ShogiPlayers3"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_6 {中井捨吉} [%male]
+person pro_7 {大野源一} [%male]
+person pro_13 {角田三男} [%male]
+person pro_18 {升田幸三} [%male]
+person pro_26 {大山康晴} [%male]
+person pro_28 {山中和正} [%male]
+person pro_30 {本間爽悦} [%male]
+person pro_51 {二見敬三} [%male]
+person pro_52 {西本馨} [%male]
+person pro_58 {橋本三治} [%male]
+person pro_66 {有吉道夫} [%male]
+person pro_70 {賀集正三} [%male]
+person pro_104 {田中魁秀} [%male]
+person pro_105 {坪内利幸} [%male]
+person pro_116 {前田祐司} [%male]
+person pro_120 {桐谷広人} [%male]
+person pro_135 {福崎文吾} [%male]
+person pro_145 {依田有司} [%male]
+person pro_151 {西川慶二} [%male]
+person pro_158 {有森浩三} [%male]
+person pro_162 {浦野真彦} [%male]
+person pro_171 {阿部隆} [%male]
+person pro_176 {中田功} [%male]
+person pro_178 {長沼洋} [%male]
+person pro_182 {佐藤康光} [%male]
+person pro_199 {平藤眞吾} [%male]
+person pro_208 {行方尚史} [%male]
+person pro_223 {小林裕士} [%male]
+person pro_243 {大平武洋} [%male]
+person pro_263 {佐藤天彦} [%male]
+person pro_272 {西川和宏} [%male]
+person pro_299 {今泉健司} [%male]
+person lady_25 {山田朱未} [%female]
+person lady_6002 {武富礼衣} [%female]
+person extra_3 {木見金治郎} [%male]
+
+// Generations
+
+
+// Families
+(pro_6) - (pro_30 pro_162)
+(pro_13) - (pro_70)
+(pro_18) - (pro_120)
+(pro_26) - (pro_66 pro_176 pro_208)
+(pro_30) - (pro_104 pro_145)
+(pro_66) - (pro_105 pro_158 lady_25)
+(pro_70) - (pro_116 pro_151 pro_199)
+(pro_104) - (pro_135 pro_171 pro_178 pro_182 pro_223)
+(pro_120) - (pro_243 pro_299)
+(pro_151) - (pro_272)
+(pro_176) - (pro_263 lady_6002)
+(extra_3) - (pro_6 pro_7 pro_13 pro_18 pro_26 pro_28 pro_51 pro_52 pro_58)
+
+@endPdg

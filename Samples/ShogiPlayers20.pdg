@@ -1,0 +1,22 @@
+@startPdg "ShogiPlayers20"
+
+direction LR
+fontname "Sans"
+
+
+// Attributes
+attribute %male { color="blue", style=filled, fillcolor="lightblue" }
+attribute %female { color="red", style=filled, fillcolor="pink" }
+
+
+// Persons
+person pro_134 {小野修一} [%male]
+person extra_20 {建部和歌夫} [%male]
+
+// Generations
+
+
+// Families
+(extra_20) - (pro_134)
+
+@endPdg
